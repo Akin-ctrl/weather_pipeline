@@ -20,28 +20,28 @@ services:
       dockerfile: Dockerfile_pipeline
     container_name: weather_pipeline
     depends_on:
-      - db
+      - database
     environment:
       - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_NAME=${DB_NAME}
-      - DB_HOST=db # Use the service name 'db' to connect
+      - DB_HOST=database # Use the service name 'database' to connect
 
-  dashboard:
-    build:
-      context: .
-      dockerfile: Dockerfile_dashboard
-    container_name: weather_dashboard
-    depends_on:
-      - db
-    ports:
-      - "8501:8501"
-    environment:
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_NAME=${DB_NAME}
-      - DB_HOST=db
+  # dashboard:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile_dashboard
+  #   container_name: weather_dashboard
+  #   depends_on:
+  #     - database
+  #   ports:
+  #     - "8501:8501"
+  #   environment:
+  #     - DB_USER=${DB_USER}
+  #     - DB_PASSWORD=${DB_PASSWORD}
+  #     - DB_NAME=${DB_NAME}
+  #     - DB_HOST=db
 
 volumes:
   postgres_data:

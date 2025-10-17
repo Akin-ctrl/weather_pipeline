@@ -1,0 +1,522 @@
+city_name,temperature,humidity,pressure,wind_speed,weather_main,weather_desc,reading_timestamp,city
+Zuru,33.18,32,1010,1.97,Clouds,scattered clouds,2025-10-17 11:33:17+00:00,Zuru
+Zungeru,31.59,56,1010,1.49,Clouds,overcast clouds,2025-10-17 11:33:18+00:00,Zungeru
+Zaria,32.4,27,1010,3.86,Clouds,scattered clouds,2025-10-17 11:33:19+00:00,Zaria
+Zango,35.55,14,1010,6.05,Clouds,broken clouds,2025-10-17 11:33:19+00:00,Zango
+Zalanga,33.6,27,1010,4.06,Clouds,scattered clouds,2025-10-17 11:33:20+00:00,Zalanga
+Zaki Biam,31.73,49,1009,1.75,Clouds,broken clouds,2025-10-17 11:33:21+00:00,Zaki Biam
+Zadawa,35.05,22,1009,4.21,Clouds,scattered clouds,2025-10-17 11:33:22+00:00,Zadawa
+Yuli,34.67,32,1009,2.72,Clouds,broken clouds,2025-10-17 11:33:23+00:00,Yuli
+Yola,32.56,48,1010,2.06,Clouds,overcast clouds,2025-10-17 11:33:23+00:00,Yola
+Yenagoa,29.49,66,1010,1.11,Clouds,broken clouds,2025-10-17 11:33:24+00:00,Yenagoa
+Yelwa,33.03,43,1009,2.07,Clouds,broken clouds,2025-10-17 11:33:24+00:00,Yelwa
+Yashikira,31.19,50,1010,2.15,Clouds,broken clouds,2025-10-17 11:33:25+00:00,Yashikira
+Yandev,31.32,52,1010,1.68,Clouds,broken clouds,2025-10-17 11:33:25+00:00,Yandev
+Yanda Bayo,35.24,19,1009,3.93,Clouds,scattered clouds,2025-10-17 11:33:26+00:00,Yanda Bayo
+Yamrat,34.34,26,1009,4.63,Clouds,scattered clouds,2025-10-17 11:33:26+00:00,Yamrat
+Yajiwa,34.66,21,1010,3.83,Clouds,overcast clouds,2025-10-17 11:33:26+00:00,Yajiwa
+Wuyo,33.74,35,1009,1.43,Clouds,broken clouds,2025-10-17 11:33:27+00:00,Wuyo
+Wusasa,32.22,28,1010,3.75,Clouds,scattered clouds,2025-10-17 11:33:27+00:00,Wusasa
+Wurno,35.6,18,1010,2.79,Clear,clear sky,2025-10-17 11:33:28+00:00,Wurno
+Wukari,32.15,48,1009,1.42,Clouds,broken clouds,2025-10-17 11:33:29+00:00,Wukari
+Wudil,36.11,18,1009,4.93,Clouds,scattered clouds,2025-10-17 11:33:29+00:00,Wudil
+Wawa,32.11,49,1010,1.35,Clouds,overcast clouds,2025-10-17 11:33:29+00:00,Wawa
+Wauro Jabbe,32.81,47,1010,2.09,Clouds,overcast clouds,2025-10-17 11:33:30+00:00,Wauro Jabbe
+Wasagu,33.4,29,1010,2.52,Clouds,scattered clouds,2025-10-17 11:33:30+00:00,Wasagu
+Warri,31.54,57,1010,1.15,Clouds,broken clouds,2025-10-17 11:33:30+00:00,Warri
+Wamba,30.79,54,1010,2.06,Clouds,broken clouds,2025-10-17 11:33:31+00:00,Wamba
+Walmayo,31.07,61,1010,0.87,Clouds,broken clouds,2025-10-17 11:33:31+00:00,Walmayo
+Wagini,34.77,15,1010,4.09,Clouds,scattered clouds,2025-10-17 11:33:31+00:00,Wagini
+Vom,27.38,37,1011,5.3,Clouds,scattered clouds,2025-10-17 11:33:32+00:00,Vom
+Uyo,27.58,74,1011,2.65,Clouds,overcast clouds,2025-10-17 11:33:32+00:00,Uyo
+Uruobo-Okija,30.99,57,1010,1.74,Clouds,broken clouds,2025-10-17 11:33:32+00:00,Uruobo-Okija
+Uromi,28.81,63,1010,1.89,Clouds,broken clouds,2025-10-17 11:33:33+00:00,Uromi
+Umunede,28.36,71,1010,1.01,Clouds,overcast clouds,2025-10-17 11:33:33+00:00,Umunede
+Umuahia,29.35,63,1010,1.6,Clouds,overcast clouds,2025-10-17 11:33:33+00:00,Umuahia
+Ukata,32.76,36,1010,2.15,Clouds,broken clouds,2025-10-17 11:33:34+00:00,Ukata
+Ughelli,30.18,63,1010,1.48,Clouds,overcast clouds,2025-10-17 11:33:34+00:00,Ughelli
+Ugep,30.14,62,1010,1.61,Clouds,overcast clouds,2025-10-17 11:33:34+00:00,Ugep
+Uga Soja,31.42,59,1010,1.05,Clouds,broken clouds,2025-10-17 11:33:35+00:00,Uga Soja
+Uga,29.84,60,1010,2.07,Clouds,broken clouds,2025-10-17 11:33:35+00:00,Uga
+Udi,27.26,61,1010,2.06,Clouds,overcast clouds,2025-10-17 11:33:35+00:00,Udi
+Ubiaja,29.49,63,1010,1.88,Clouds,broken clouds,2025-10-17 11:33:36+00:00,Ubiaja
+Uba,27.02,56,1015,4.04,Clouds,broken clouds,2025-10-17 11:33:36+00:00,Uba
+Tungan Ali,29.25,79,1010,2.57,Clouds,few clouds,2025-10-17 11:33:36+00:00,Tungan Ali
+Toungo,29.72,54,1011,2.06,Clouds,broken clouds,2025-10-17 11:33:36+00:00,Toungo
+Tokombere,35.65,20,1009,3.29,Clouds,overcast clouds,2025-10-17 11:33:37+00:00,Tokombere
+Tegina,29.32,62,1010,1.76,Clouds,overcast clouds,2025-10-17 11:33:37+00:00,Tegina
+Tambuwal,34.74,27,1009,1.61,Clear,clear sky,2025-10-17 11:33:37+00:00,Tambuwal
+Talata Mafara,34.77,20,1010,2.62,Clouds,scattered clouds,2025-10-17 11:33:38+00:00,Talata Mafara
+Takum,31.06,52,1010,1.39,Clouds,broken clouds,2025-10-17 11:33:38+00:00,Takum
+Takai,35.63,20,1009,5.03,Clouds,few clouds,2025-10-17 11:33:38+00:00,Takai
+Suya,30.42,55,1011,1.98,Clouds,broken clouds,2025-10-17 11:33:39+00:00,Suya
+Suleja,28.55,47,1010,1.2,Clouds,broken clouds,2025-10-17 11:33:39+00:00,Suleja
+Sokoto State,35.37,21,1010,1.97,Clear,clear sky,2025-10-17 11:33:39+00:00,Sokoto State
+Sokoto,35.06,21,1010,1.94,Clear,clear sky,2025-10-17 11:33:40+00:00,Sokoto
+Soba,32.06,29,1010,3.37,Clouds,scattered clouds,2025-10-17 11:33:40+00:00,Soba
+Siluko,31.58,57,1010,0.56,Clouds,overcast clouds,2025-10-17 11:33:40+00:00,Siluko
+Shinkafi,35.42,15,1010,2.13,Clear,clear sky,2025-10-17 11:33:41+00:00,Shinkafi
+Shani,34.12,35,1009,1.75,Clouds,overcast clouds,2025-10-17 11:33:41+00:00,Shani
+Shanga,34.18,38,1010,1.69,Clouds,scattered clouds,2025-10-17 11:33:41+00:00,Shanga
+Saki,29.19,60,1011,1.35,Clouds,overcast clouds,2025-10-17 11:33:42+00:00,Saki
+Shagamu,30.86,59,1010,1.42,Clouds,overcast clouds,2025-10-17 11:33:42+00:00,Shagamu
+Shaffa,31.74,31,1010,3.06,Clouds,overcast clouds,2025-10-17 11:33:42+00:00,Shaffa
+Sauri,32.35,24,1010,3.79,Clouds,scattered clouds,2025-10-17 11:33:43+00:00,Sauri
+Sapele,31.94,58,1010,0.78,Clouds,broken clouds,2025-10-17 11:33:43+00:00,Sapele
+Samamiya,35.09,23,1009,4.53,Clouds,few clouds,2025-10-17 11:33:43+00:00,Samamiya
+Sade,35.32,20,1009,3.93,Clouds,scattered clouds,2025-10-17 11:33:44+00:00,Sade
+Runka,34.65,16,1010,4.07,Clouds,broken clouds,2025-10-17 11:33:44+00:00,Runka
+Ruma,15.31,61,1020,2.77,Clouds,few clouds,2025-10-17 11:30:01+00:00,Ruma
+Rivers State,29.94,61,1010,2.87,Clouds,broken clouds,2025-10-17 11:33:44+00:00,Rivers State
+Riti,32.11,50,1010,1.62,Clouds,broken clouds,2025-10-17 11:33:45+00:00,Riti
+Ringim,35.75,19,1009,4.71,Clouds,scattered clouds,2025-10-17 11:33:45+00:00,Ringim
+Rijau,33.29,34,1010,2.01,Clouds,scattered clouds,2025-10-17 11:33:45+00:00,Rijau
+Rano,34.72,20,1009,4.22,Clouds,scattered clouds,2025-10-17 11:33:46+00:00,Rano
+Saminaka,31.9,29,1010,3.85,Clouds,scattered clouds,2025-10-17 11:33:46+00:00,Saminaka
+Rabah,35.3,20,1010,2.69,Clear,clear sky,2025-10-17 11:33:46+00:00,Rabah
+Potiskum,36.59,15,1009,4.92,Clouds,few clouds,2025-10-17 11:33:47+00:00,Potiskum
+Port Harcourt,31.1,61,1010,3.36,Clouds,broken clouds,2025-10-17 11:33:47+00:00,Port Harcourt
+Plateau State,32.17,38,1010,2.36,Clouds,broken clouds,2025-10-17 11:33:47+00:00,Plateau State
+Pindiga,32.51,33,1010,3.09,Clouds,broken clouds,2025-10-17 11:33:48+00:00,Pindiga
+Patigi,32.94,52,1009,1.76,Clouds,broken clouds,2025-10-17 11:33:48+00:00,Patigi
+Patani,28.9,70,1010,1.29,Clouds,broken clouds,2025-10-17 11:33:48+00:00,Patani
+Panyam,27.95,40,1012,4.75,Clouds,broken clouds,2025-10-17 11:33:49+00:00,Panyam
+Pankshin,27.29,40,1011,3.5,Clouds,broken clouds,2025-10-17 11:33:50+00:00,Pankshin
+Ozubulu,30.71,57,1010,1.78,Clouds,broken clouds,2025-10-17 11:33:50+00:00,Ozubulu
+Oyo State,30.02,61,1010,1.23,Clouds,overcast clouds,2025-10-17 11:33:51+00:00,Oyo State
+Oyo,30.03,61,1010,1.14,Clouds,overcast clouds,2025-10-17 11:33:51+00:00,Oyo
+Oyan,29.96,58,1010,1.57,Clouds,scattered clouds,2025-10-17 11:33:51+00:00,Oyan
+Owode,30.06,59,1010,1.85,Clouds,broken clouds,2025-10-17 11:33:51+00:00,Owode
+Owo,30.49,55,1010,1.89,Clouds,broken clouds,2025-10-17 11:33:52+00:00,Owo
+Owerri,30.2,62,1010,2.16,Clouds,broken clouds,2025-10-17 11:33:52+00:00,Owerri
+Otukpa,28.64,62,1010,2.33,Clouds,overcast clouds,2025-10-17 11:33:52+00:00,Otukpa
+Otta,5.52,49,1023,4.03,Clouds,few clouds,2025-10-17 11:33:53+00:00,Otta
+Osogbo,29.21,66,1010,1.37,Clouds,broken clouds,2025-10-17 11:33:53+00:00,Osogbo
+Oron,28.24,71,1011,1.74,Clouds,overcast clouds,2025-10-17 11:33:53+00:00,Oron
+Orodo,29.93,61,1010,2.07,Clouds,broken clouds,2025-10-17 11:33:54+00:00,Orodo
+Orlu,29.94,60,1010,1.97,Clouds,broken clouds,2025-10-17 11:33:54+00:00,Orlu
+Orita Eruwa,30.66,60,1010,1.25,Clouds,broken clouds,2025-10-17 11:33:54+00:00,Orita Eruwa
+Orerokpe,31.27,59,1010,0.88,Clouds,broken clouds,2025-10-17 11:33:54+00:00,Orerokpe
+Ore,30.0,62,1010,0.26,Clouds,overcast clouds,2025-10-17 11:33:55+00:00,Ore
+Opi,28.93,58,1010,2.1,Clouds,broken clouds,2025-10-17 11:33:55+00:00,Opi
+Onitsha,31.46,57,1010,1.35,Clouds,broken clouds,2025-10-17 11:33:55+00:00,Onitsha
+Ondo State,30.17,59,1010,1.52,Clouds,broken clouds,2025-10-17 11:33:56+00:00,Ondo State
+Ondo,30.13,60,1010,1.56,Clouds,overcast clouds,2025-10-17 11:33:56+00:00,Ondo
+Omuo-Ekiti,29.09,57,1011,2.27,Clouds,broken clouds,2025-10-17 11:33:56+00:00,Omuo-Ekiti
+Omu-Aran,29.24,56,1010,2.31,Clouds,broken clouds,2025-10-17 11:33:56+00:00,Omu-Aran
+Omoku,30.76,60,1010,1.05,Clouds,broken clouds,2025-10-17 11:33:57+00:00,Omoku
+Olupona,29.62,65,1010,1.15,Clouds,broken clouds,2025-10-17 11:33:57+00:00,Olupona
+Okuta,30.04,58,1011,1.73,Clouds,overcast clouds,2025-10-17 11:33:57+00:00,Okuta
+Okrika,29.55,62,1010,3.43,Clouds,broken clouds,2025-10-17 11:33:58+00:00,Okrika
+Oko,30.16,66,1010,0.41,Clouds,overcast clouds,2025-10-17 11:33:58+00:00,Oko
+Okigwe,29.37,63,1010,2.14,Clouds,broken clouds,2025-10-17 11:33:58+00:00,Okigwe
+Oke Mesi,28.15,62,1011,1.8,Clouds,broken clouds,2025-10-17 11:33:58+00:00,Oke Mesi
+Okeho,28.74,62,1011,1.68,Clouds,overcast clouds,2025-10-17 11:33:59+00:00,Okeho
+Ohunene,32.41,55,1010,1.28,Clouds,broken clouds,2025-10-17 11:33:59+00:00,Ohunene
+Ohafia-Ifigh,29.97,62,1010,1.05,Clouds,overcast clouds,2025-10-17 11:33:59+00:00,Ohafia-Ifigh
+Ogwashi-Uku,30.39,59,1010,1.06,Clouds,broken clouds,2025-10-17 11:34:00+00:00,Ogwashi-Uku
+Oguta,31.49,56,1010,1.63,Clouds,broken clouds,2025-10-17 11:34:00+00:00,Oguta
+Ogurugu,31.06,62,1010,0.93,Clouds,overcast clouds,2025-10-17 11:34:00+00:00,Ogurugu
+Ogun State,30.56,59,1010,1.9,Clouds,broken clouds,2025-10-17 11:34:01+00:00,Ogun State
+Ogoja,29.95,61,1010,1.71,Clouds,broken clouds,2025-10-17 11:34:01+00:00,Ogoja
+Ogbomoso,29.69,62,1010,1.95,Clouds,overcast clouds,2025-10-17 11:34:01+00:00,Ogbomoso
+Ogaminana,30.91,57,1010,2.45,Clouds,broken clouds,2025-10-17 11:34:02+00:00,Ogaminana
+Offa,30.08,56,1010,1.74,Clouds,broken clouds,2025-10-17 11:34:02+00:00,Offa
+Ode,29.21,56,1010,2.2,Clouds,broken clouds,2025-10-17 11:34:02+00:00,Ode
+Ochobo,29.69,66,1010,2.04,Clouds,overcast clouds,2025-10-17 11:34:03+00:00,Ochobo
+Obudu,29.59,61,1010,1.14,Clouds,overcast clouds,2025-10-17 11:34:03+00:00,Obudu
+Obubra,30.12,63,1010,0.74,Clouds,overcast clouds,2025-10-17 11:34:03+00:00,Obubra
+Obonoma,29.79,62,1010,2.93,Clouds,broken clouds,2025-10-17 11:34:04+00:00,Obonoma
+Obolo-Eke (1),29.4,63,1010,2.37,Clouds,overcast clouds,2025-10-17 11:34:04+00:00,Obolo-Eke (1)
+Obiaruku,30.54,64,1010,0.32,Clouds,overcast clouds,2025-10-17 11:34:04+00:00,Obiaruku
+Numan,33.64,43,1009,1.81,Clouds,overcast clouds,2025-10-17 11:34:05+00:00,Numan
+Nsukka,29.59,57,1010,1.87,Clouds,overcast clouds,2025-10-17 11:34:06+00:00,Nsukka
+Nnewi,30.52,58,1010,1.79,Clouds,broken clouds,2025-10-17 11:34:06+00:00,Nnewi
+Nkwerre,29.77,61,1010,2.13,Clouds,broken clouds,2025-10-17 11:34:06+00:00,Nkwerre
+Nkpor,30.78,57,1010,1.42,Clouds,broken clouds,2025-10-17 11:34:07+00:00,Nkpor
+Niger State,31.36,54,1010,2.22,Clouds,overcast clouds,2025-10-17 11:34:07+00:00,Niger State
+Federal Republic of Nigeria,30.22,38,1011,3.1,Clouds,scattered clouds,2025-10-17 11:32:25+00:00,Federal Republic of Nigeria
+Nguru,36.6,11,1009,5.79,Clouds,few clouds,2025-10-17 11:34:07+00:00,Nguru
+Ngurore,33.05,46,1009,2.16,Clouds,overcast clouds,2025-10-17 11:34:08+00:00,Ngurore
+Ngala,35.43,15,1009,5.25,Clouds,overcast clouds,2025-10-17 11:34:08+00:00,Ngala
+New Shagunnu,29.8,61,1010,1.02,Clouds,overcast clouds,2025-10-17 11:34:08+00:00,New Shagunnu
+Nasarawa,32.06,54,1010,1.43,Clouds,scattered clouds,2025-10-17 11:34:09+00:00,Nasarawa
+Nafada,35.94,22,1009,3.5,Clouds,broken clouds,2025-10-17 11:34:09+00:00,Nafada
+Mutum Biyu,32.13,49,1010,1.75,Clouds,broken clouds,2025-10-17 11:34:09+00:00,Mutum Biyu
+Musawa,34.02,17,1010,4.82,Clouds,scattered clouds,2025-10-17 11:34:10+00:00,Musawa
+Mubi,32.46,30,1010,3.34,Clouds,overcast clouds,2025-10-17 11:34:10+00:00,Mubi
+Moriki,35.1,15,1010,2.27,Clouds,few clouds,2025-10-17 11:34:11+00:00,Moriki
+Monguno,32.61,22,1010,6.32,Clouds,overcast clouds,2025-10-17 11:34:11+00:00,Monguno
+Mokwa,33.2,49,1010,1.63,Clouds,broken clouds,2025-10-17 11:34:11+00:00,Mokwa
+Modakeke,29.49,65,1010,1.15,Clouds,broken clouds,2025-10-17 11:34:11+00:00,Modakeke
+Misau,35.19,22,1009,4.06,Clouds,scattered clouds,2025-10-17 11:34:12+00:00,Misau
+Miringa,31.99,29,1010,3.76,Clouds,overcast clouds,2025-10-17 11:34:12+00:00,Miringa
+Minna,31.36,54,1010,1.32,Clouds,broken clouds,2025-10-17 11:34:13+00:00,Minna
+Imeko,29.23,65,1011,1.91,Clouds,overcast clouds,2025-10-17 11:34:13+00:00,Imeko
+Mayo-Belwa,32.24,46,1010,1.76,Clouds,overcast clouds,2025-10-17 11:34:14+00:00,Mayo-Belwa
+Machina,36.48,11,1010,5.94,Clouds,scattered clouds,2025-10-17 11:34:14+00:00,Machina
+Mashi,35.34,14,1010,5.51,Clouds,scattered clouds,2025-10-17 11:34:14+00:00,Mashi
+Maru,34.33,20,1010,3.17,Clouds,scattered clouds,2025-10-17 11:34:15+00:00,Maru
+Marte,34.89,16,1010,6.06,Clouds,overcast clouds,2025-10-17 11:34:15+00:00,Marte
+Mando,32.12,40,1010,1.47,Clouds,broken clouds,2025-10-17 11:34:15+00:00,Mando
+Malumfashi,33.11,21,1010,4.1,Clouds,scattered clouds,2025-10-17 11:30:51+00:00,Malumfashi
+Mallammaduri,36.44,13,1009,5.28,Clouds,broken clouds,2025-10-17 11:34:16+00:00,Mallammaduri
+Makurdi,30.77,61,1010,0.8,Clouds,broken clouds,2025-10-17 11:34:16+00:00,Makurdi
+Maiyama,34.16,32,1010,1.44,Clear,clear sky,2025-10-17 11:34:17+00:00,Maiyama
+Maitama,27.74,52,1010,2.74,Clouds,scattered clouds,2025-10-17 11:34:17+00:00,Maitama
+Maiduguri,35.56,16,1009,3.53,Clouds,overcast clouds,2025-10-17 11:34:17+00:00,Maiduguri
+Mahuta,34.19,22,1011,3.62,Clouds,broken clouds,2025-10-17 11:34:18+00:00,Mahuta
+Magumeri,35.29,14,1010,4.93,Clouds,overcast clouds,2025-10-17 11:34:18+00:00,Magumeri
+Madara,35.77,19,1009,4.09,Clouds,scattered clouds,2025-10-17 11:34:18+00:00,Madara
+Madala,28.55,79,1010,2.57,Clouds,few clouds,2025-10-17 11:34:18+00:00,Madala
+Madagali,31.69,30,1010,2.96,Clouds,overcast clouds,2025-10-17 11:34:19+00:00,Madagali
+Lokoja,32.56,54,1010,1.49,Clouds,overcast clouds,2025-10-17 11:34:19+00:00,Lokoja
+Lere,31.89,29,1010,3.71,Clouds,scattered clouds,2025-10-17 11:34:19+00:00,Lere
+Lere,31.89,29,1010,3.71,Clouds,scattered clouds,2025-10-17 11:34:19+00:00,Lere
+Lau,32.86,48,1009,1.24,Clouds,overcast clouds,2025-10-17 11:34:20+00:00,Lau
+Lapai,32.86,50,1010,1.46,Clouds,broken clouds,2025-10-17 11:34:20+00:00,Lapai
+Langtang,33.41,37,1009,2.3,Clouds,broken clouds,2025-10-17 11:34:21+00:00,Langtang
+Lame,33.07,27,1010,3.5,Clouds,broken clouds,2025-10-17 11:34:21+00:00,Lame
+Lalupon,29.01,70,1010,3.09,Clouds,scattered clouds,2025-10-17 11:34:21+00:00,Lalupon
+Lagos State,30.71,61,1010,2.22,Clouds,overcast clouds,2025-10-17 11:30:06+00:00,Lagos State
+Lagos,30.71,61,1010,2.22,Clouds,overcast clouds,2025-10-17 11:30:59+00:00,Lagos
+Lafiagi,32.67,54,1010,1.16,Clouds,overcast clouds,2025-10-17 11:34:22+00:00,Lafiagi
+Lafia,32.31,52,1010,1.47,Clouds,broken clouds,2025-10-17 11:34:22+00:00,Lafia
+Kwolla,32.67,45,1010,2.75,Clouds,broken clouds,2025-10-17 11:34:23+00:00,Kwolla
+Kwatarkwashi,33.69,20,1010,2.99,Clouds,broken clouds,2025-10-17 11:34:24+00:00,Kwatarkwashi
+Kwara State,31.18,52,1010,2.21,Clouds,broken clouds,2025-10-17 11:34:24+00:00,Kwara State
+Kwali,33.01,51,1010,0.32,Clouds,broken clouds,2025-10-17 11:34:25+00:00,Kwali
+Kwale,31.71,56,1010,1.13,Clouds,broken clouds,2025-10-17 11:34:25+00:00,Kwale
+Kuyi,31.17,56,1010,1.27,Clouds,broken clouds,2025-10-17 11:34:25+00:00,Kuyi
+Kuta,28.97,84,1008,5.14,Clouds,few clouds,2025-10-17 11:34:26+00:00,Kuta
+Kusheriki,30.55,50,1010,0.86,Clouds,overcast clouds,2025-10-17 11:34:26+00:00,Kusheriki
+Kura,35.54,18,1009,4.57,Clouds,few clouds,2025-10-17 11:34:26+00:00,Kura
+Kumo,32.92,34,1010,3.51,Clouds,broken clouds,2025-10-17 11:34:27+00:00,Kumo
+Kumagunnam,36.49,11,1010,6.09,Clouds,few clouds,2025-10-17 11:34:27+00:00,Kumagunnam
+Kukawa,32.78,19,1011,6.58,Clouds,overcast clouds,2025-10-17 11:34:27+00:00,Kukawa
+Kujama,31.58,33,1010,2.91,Clouds,scattered clouds,2025-10-17 11:34:28+00:00,Kujama
+Koton-Karfe,32.42,53,1010,1.77,Clouds,broken clouds,2025-10-17 11:34:28+00:00,Koton-Karfe
+Kontagora,32.85,40,1010,1.75,Clouds,broken clouds,2025-10-17 11:34:28+00:00,Kontagora
+Konkwesso,33.22,41,1010,2.26,Clouds,broken clouds,2025-10-17 11:34:29+00:00,Konkwesso
+Konduga,36.0,16,1009,3.58,Clouds,overcast clouds,2025-10-17 11:34:29+00:00,Konduga
+Kisi,31.37,50,1010,1.32,Clouds,overcast clouds,2025-10-17 11:34:29+00:00,Kisi
+Kibiya,34.94,21,1009,4.24,Clouds,scattered clouds,2025-10-17 11:34:30+00:00,Kibiya
+Ketu Adieowe,29.95,65,1011,2.64,Clouds,overcast clouds,2025-10-17 11:34:30+00:00,Ketu Adieowe
+Kende,32.53,47,1011,2.13,Clouds,few clouds,2025-10-17 11:29:38+00:00,Kende
+Kafin Hausa,36.08,17,1009,4.47,Clouds,scattered clouds,2025-10-17 11:34:30+00:00,Kafin Hausa
+Keffi,31.82,52,1010,1.09,Clouds,scattered clouds,2025-10-17 11:34:31+00:00,Keffi
+Kazaure,35.44,15,1010,5.76,Clouds,scattered clouds,2025-10-17 11:34:31+00:00,Kazaure
+Kaura Namoda,34.76,17,1010,2.76,Clouds,scattered clouds,2025-10-17 11:34:31+00:00,Kaura Namoda
+Katsina State,34.37,16,1010,4.5,Clouds,broken clouds,2025-10-17 11:34:32+00:00,Katsina State
+Katsina-Ala,30.83,55,1010,1.43,Clouds,overcast clouds,2025-10-17 11:34:32+00:00,Katsina-Ala
+Katsina,34.83,14,1010,4.56,Clouds,scattered clouds,2025-10-17 11:34:32+00:00,Katsina
+Katagum,36.33,15,1009,4.89,Clouds,scattered clouds,2025-10-17 11:34:33+00:00,Katagum
+Kari,35.32,21,1009,3.97,Clouds,scattered clouds,2025-10-17 11:34:33+00:00,Kari
+Kano State,34.6,21,1009,4.07,Clouds,scattered clouds,2025-10-17 11:34:33+00:00,Kano State
+Kano,31.94,43,1009,3.09,Clear,clear sky,2025-10-17 11:34:34+00:00,Kano
+Kankara,33.28,20,1010,3.99,Clouds,scattered clouds,2025-10-17 11:34:34+00:00,Kankara
+Kamba,34.21,35,1010,2.46,Clouds,few clouds,2025-10-17 11:34:34+00:00,Kamba
+Kaltungo,31.95,39,1010,2.68,Clouds,overcast clouds,2025-10-17 11:34:35+00:00,Kaltungo
+Kajuru,31.23,35,1010,2.81,Clouds,broken clouds,2025-10-17 11:34:35+00:00,Kajuru
+Kajul,30.21,37,1011,3.06,Clouds,scattered clouds,2025-10-17 11:34:35+00:00,Kajul
+Kangiwa,35.03,26,1010,2.45,Clouds,few clouds,2025-10-17 11:34:36+00:00,Kangiwa
+Kaiama,32.48,47,1010,1.4,Clouds,overcast clouds,2025-10-17 11:34:36+00:00,Kaiama
+Kagoro,30.44,38,1010,1.45,Clouds,scattered clouds,2025-10-17 11:34:36+00:00,Kagoro
+Kafarati,30.82,31,1010,4.57,Clouds,broken clouds,2025-10-17 11:34:36+00:00,Kafarati
+Kafanchan,30.58,39,1010,1.33,Clouds,scattered clouds,2025-10-17 11:34:37+00:00,Kafanchan
+Kaduna State,31.29,35,1010,2.8,Clouds,broken clouds,2025-10-17 11:34:37+00:00,Kaduna State
+Kaduna,32.27,31,1010,3.04,Clouds,scattered clouds,2025-10-17 11:34:37+00:00,Kaduna
+Kachia,30.61,39,1010,2.85,Clouds,scattered clouds,2025-10-17 11:34:38+00:00,Kachia
+Kabba,29.8,56,1010,2.49,Clouds,broken clouds,2025-10-17 11:34:38+00:00,Kabba
+Jos,28.27,36,1011,4.82,Clouds,scattered clouds,2025-10-17 11:34:39+00:00,Jos
+Jimeta,32.81,48,1010,2.02,Clouds,overcast clouds,2025-10-17 11:34:39+00:00,Jimeta
+Jikamshi,34.24,16,1010,5.12,Clouds,broken clouds,2025-10-17 11:34:39+00:00,Jikamshi
+Jibia,35.75,14,1010,4.51,Clouds,scattered clouds,2025-10-17 11:34:40+00:00,Jibia
+Jega,34.75,30,1010,1.49,Clear,clear sky,2025-10-17 11:34:40+00:00,Jega
+Jebba,33.7,47,1010,1.75,Clouds,broken clouds,2025-10-17 11:34:40+00:00,Jebba
+Jalingo,32.33,51,1010,1.74,Clouds,overcast clouds,2025-10-17 11:34:41+00:00,Jalingo
+Lajere,37.37,11,1009,5.22,Clouds,scattered clouds,2025-10-17 11:34:41+00:00,Lajere
+Jagun Elesin,29.15,70,1010,3.09,Clouds,scattered clouds,2025-10-17 11:34:41+00:00,Jagun Elesin
+Iwo,29.67,65,1010,1.19,Clouds,broken clouds,2025-10-17 11:34:41+00:00,Iwo
+Itu,26.79,54,1013,2.12,Clouds,overcast clouds,2025-10-17 11:34:42+00:00,Itu
+Isieke,30.83,61,1010,1.36,Clouds,overcast clouds,2025-10-17 11:34:42+00:00,Isieke
+Iseyin,29.79,61,1010,1.54,Clouds,overcast clouds,2025-10-17 11:34:42+00:00,Iseyin
+Ise-Ekiti,30.4,54,1010,2.13,Clouds,broken clouds,2025-10-17 11:34:43+00:00,Ise-Ekiti
+Isara,30.52,60,1010,1.74,Clouds,broken clouds,2025-10-17 11:34:43+00:00,Isara
+Isanlu-Itedoijowa,30.91,53,1010,2.02,Clouds,broken clouds,2025-10-17 11:34:43+00:00,Isanlu-Itedoijowa
+Ipoti,28.16,59,1011,1.8,Clouds,broken clouds,2025-10-17 11:34:43+00:00,Ipoti
+Iperu,30.6,59,1010,1.57,Clouds,broken clouds,2025-10-17 11:34:44+00:00,Iperu
+Inisa,28.79,66,1010,1.52,Clouds,broken clouds,2025-10-17 11:34:44+00:00,Inisa
+Imo State,29.87,62,1010,2.11,Clouds,broken clouds,2025-10-17 11:34:44+00:00,Imo State
+Ilorin,32.32,48,1010,1.73,Clouds,broken clouds,2025-10-17 11:34:45+00:00,Ilorin
+Ilobu,29.22,66,1010,1.28,Clouds,broken clouds,2025-10-17 11:34:45+00:00,Ilobu
+Illushi,31.16,61,1010,1.8,Clouds,broken clouds,2025-10-17 11:34:45+00:00,Illushi
+Illela,36.03,13,1010,2.38,Clear,clear sky,2025-10-17 11:34:46+00:00,Illela
+Ilesa,29.81,57,1010,1.67,Clouds,broken clouds,2025-10-17 11:34:46+00:00,Ilesa
+Ilaro,29.56,63,1010,1.6,Clouds,overcast clouds,2025-10-17 11:34:46+00:00,Ilaro
+Ilare,30.48,55,1010,1.41,Clouds,broken clouds,2025-10-17 11:34:47+00:00,Ilare
+Ila Orangun,29.61,56,1010,1.99,Clouds,broken clouds,2025-10-17 11:34:47+00:00,Ila Orangun
+Ikot Ekpene,31.09,57,1010,1.59,Clouds,overcast clouds,2025-10-17 11:34:47+00:00,Ikot Ekpene
+Ikom,29.65,65,1010,0.98,Clouds,overcast clouds,2025-10-17 11:34:48+00:00,Ikom
+Ikirun,29.4,62,1010,1.47,Clouds,broken clouds,2025-10-17 11:34:48+00:00,Ikirun
+Ikire,29.11,63,1010,1.15,Clouds,broken clouds,2025-10-17 11:34:48+00:00,Ikire
+Ikere-Ekiti,31.02,53,1010,1.72,Clouds,broken clouds,2025-10-17 11:34:49+00:00,Ikere-Ekiti
+Ikem,29.58,65,1010,2.26,Clouds,overcast clouds,2025-10-17 11:34:49+00:00,Ikem
+Ikeja,29.94,70,1011,1.54,Clouds,broken clouds,2025-10-17 11:34:49+00:00,Ikeja
+Ikang,28.83,68,1011,2.27,Clouds,overcast clouds,2025-10-17 11:34:49+00:00,Ikang
+Ijero-Ekiti,28.5,61,1011,1.6,Clouds,overcast clouds,2025-10-17 11:34:50+00:00,Ijero-Ekiti
+Ijebu-Ode,29.85,65,1010,1.65,Clouds,overcast clouds,2025-10-17 11:34:50+00:00,Ijebu-Ode
+Ijebu-Jesa,29.16,61,1010,1.74,Clouds,broken clouds,2025-10-17 11:34:50+00:00,Ijebu-Jesa
+Ijebu-Igbo,30.44,61,1010,1.5,Clouds,broken clouds,2025-10-17 11:34:51+00:00,Ijebu-Igbo
+Ijebu-Ife,28.95,71,1010,1.93,Clouds,overcast clouds,2025-10-17 11:34:51+00:00,Ijebu-Ife
+Iho,29.77,62,1010,2.13,Clouds,broken clouds,2025-10-17 11:34:52+00:00,Iho
+Ihiala,30.6,57,1010,1.73,Clouds,broken clouds,2025-10-17 11:34:52+00:00,Ihiala
+Igede-Ekiti,28.26,60,1011,1.33,Clouds,overcast clouds,2025-10-17 11:34:52+00:00,Igede-Ekiti
+Igbo-Ukwu,29.01,59,1010,1.91,Clouds,broken clouds,2025-10-17 11:34:53+00:00,Igbo-Ukwu
+Igbor,29.64,65,1010,1.06,Clouds,broken clouds,2025-10-17 11:34:53+00:00,Igbor
+Igbo-Ora,30.39,61,1010,1.55,Clouds,broken clouds,2025-10-17 11:34:54+00:00,Igbo-Ora
+Igboho,30.71,54,1010,0.84,Clouds,overcast clouds,2025-10-17 11:34:55+00:00,Igboho
+Igbeti,31.36,51,1010,1.88,Clouds,broken clouds,2025-10-17 11:34:55+00:00,Igbeti
+Igbara-Odo,30.28,55,1010,1.76,Clouds,overcast clouds,2025-10-17 11:34:56+00:00,Igbara-Odo
+Igarra,30.5,57,1010,1.97,Clouds,broken clouds,2025-10-17 11:34:56+00:00,Igarra
+Igabi,32.31,30,1010,3.27,Clouds,scattered clouds,2025-10-17 11:34:56+00:00,Igabi
+Ifon,31.58,56,1010,0.99,Clouds,overcast clouds,2025-10-17 11:34:57+00:00,Ifon
+Ifo,29.79,60,1010,1.39,Clouds,overcast clouds,2025-10-17 11:34:58+00:00,Ifo
+Ifira,32.36,31,1010,3.04,Clouds,scattered clouds,2025-10-17 11:34:58+00:00,Ifira
+Ile-Ife,29.57,64,1010,0.92,Clouds,broken clouds,2025-10-17 11:35:00+00:00,Ile-Ife
+Ifaki,28.58,60,1011,1.26,Clouds,overcast clouds,2025-10-17 11:35:00+00:00,Ifaki
+Idiroko,30.33,63,1011,3.03,Clouds,overcast clouds,2025-10-17 11:35:00+00:00,Idiroko
+Idanre,29.61,59,1010,1.48,Clouds,broken clouds,2025-10-17 11:35:01+00:00,Idanre
+Idah,31.09,61,1010,1.32,Clouds,broken clouds,2025-10-17 11:35:01+00:00,Idah
+Icheu,32.78,54,1010,1.41,Clouds,overcast clouds,2025-10-17 11:35:01+00:00,Icheu
+Ibi,19.95,64,1017,2.11,Clouds,broken clouds,2025-10-17 11:35:02+00:00,Ibi
+Ibeto,33.3,40,1010,1.6,Clouds,broken clouds,2025-10-17 11:35:02+00:00,Ibeto
+Ibadan,28.94,70,1010,3.09,Clouds,scattered clouds,2025-10-17 11:34:01+00:00,Ibadan
+Hunkuyi,32.2,27,1010,3.98,Clouds,scattered clouds,2025-10-17 11:35:03+00:00,Hunkuyi
+Holma,32.1,36,1010,2.05,Clouds,overcast clouds,2025-10-17 11:35:03+00:00,Holma
+Hinna,33.95,36,1010,2.77,Clouds,broken clouds,2025-10-17 11:35:03+00:00,Hinna
+Heipang,27.2,38,1012,5.47,Clouds,scattered clouds,2025-10-17 11:35:04+00:00,Heipang
+Hadejia,36.44,14,1009,5.16,Clouds,scattered clouds,2025-10-17 11:35:04+00:00,Hadejia
+Gwoza,33.76,23,1010,3.28,Clouds,overcast clouds,2025-10-17 11:35:04+00:00,Gwoza
+Gwio Kura,36.59,11,1009,5.37,Clouds,scattered clouds,2025-10-17 11:35:05+00:00,Gwio Kura
+Gwasero,31.27,54,1011,1.4,Clouds,overcast clouds,2025-10-17 11:35:05+00:00,Gwasero
+Gwarzo,34.1,18,1010,4.58,Clouds,scattered clouds,2025-10-17 11:35:05+00:00,Gwarzo
+Gwaram,34.91,23,1009,4.51,Clouds,few clouds,2025-10-17 11:35:06+00:00,Gwaram
+Gwaram,34.91,23,1009,4.51,Clouds,few clouds,2025-10-17 11:35:06+00:00,Gwaram
+Gwandu,34.95,26,1009,1.55,Clear,clear sky,2025-10-17 11:35:06+00:00,Gwandu
+Gwadabawa,35.68,17,1010,1.99,Clear,clear sky,2025-10-17 11:35:07+00:00,Gwadabawa
+Gusau,33.79,20,1010,3.03,Clouds,broken clouds,2025-10-17 11:35:07+00:00,Gusau
+Gummi,34.9,27,1009,2.03,Clouds,few clouds,2025-10-17 11:35:07+00:00,Gummi
+Gumel,36.13,15,1009,5.33,Clouds,scattered clouds,2025-10-17 11:35:08+00:00,Gumel
+Gulma,35.09,26,1010,1.51,Clouds,few clouds,2025-10-17 11:35:08+00:00,Gulma
+Gujba,35.64,14,1009,5.64,Clouds,scattered clouds,2025-10-17 11:35:08+00:00,Gujba
+Goronyo,35.8,14,1010,3.68,Clear,clear sky,2025-10-17 11:35:09+00:00,Goronyo
+Gorgoram,36.57,11,1009,5.51,Clouds,scattered clouds,2025-10-17 11:35:09+00:00,Gorgoram
+Gora,11.68,74,1019,4.52,Clouds,overcast clouds,2025-10-17 11:30:14+00:00,Gora
+Goniri,35.11,17,1010,5.4,Clouds,broken clouds,2025-10-17 11:35:10+00:00,Goniri
+Gombi,31.91,35,1010,3.14,Clouds,broken clouds,2025-10-17 11:35:10+00:00,Gombi
+Gombe,31.01,33,1010,4.0,Clouds,broken clouds,2025-10-17 11:35:10+00:00,Gombe
+Gidan Sarkin Gardi,33.86,22,1010,3.58,Clouds,few clouds,2025-10-17 11:35:11+00:00,Gidan Sarkin Gardi
+Gembu,24.17,59,1012,3.32,Clouds,broken clouds,2025-10-17 11:35:11+00:00,Gembu
+Geidam,36.81,12,1009,5.56,Clouds,broken clouds,2025-10-17 11:35:11+00:00,Geidam
+Gbongan,29.44,67,1010,0.99,Clouds,broken clouds,2025-10-17 11:35:12+00:00,Gbongan
+Gaya,27.95,61,1010,0.0,Haze,haze,2025-10-17 11:35:12+00:00,Gaya
+Gassol,32.58,48,1009,1.22,Clouds,broken clouds,2025-10-17 11:35:13+00:00,Gassol
+Gashua,36.53,11,1010,5.67,Clouds,scattered clouds,2025-10-17 11:31:02+00:00,Gashua
+Garko,32.85,33,1010,3.74,Clouds,broken clouds,2025-10-17 11:35:14+00:00,Garko
+Ganye,30.12,52,1011,1.7,Clouds,overcast clouds,2025-10-17 11:35:15+00:00,Ganye
+Gandi,34.89,20,1010,2.12,Clouds,few clouds,2025-10-17 11:35:16+00:00,Gandi
+Gamboru,35.23,15,1009,5.31,Clouds,overcast clouds,2025-10-17 11:35:16+00:00,Gamboru
+Gamawa,36.09,16,1009,4.48,Clouds,scattered clouds,2025-10-17 11:35:16+00:00,Gamawa
+Gakem,29.54,60,1010,1.23,Clouds,overcast clouds,2025-10-17 11:35:17+00:00,Gakem
+Gagarawa,35.97,17,1009,4.83,Clouds,broken clouds,2025-10-17 11:35:17+00:00,Gagarawa
+Gabarin,34.84,22,1009,4.5,Clouds,scattered clouds,2025-10-17 11:35:17+00:00,Gabarin
+Funtua,31.74,26,1011,4.16,Clouds,scattered clouds,2025-10-17 11:35:18+00:00,Funtua
+Fili,9.74,73,1013,5.26,Clouds,overcast clouds,2025-10-17 11:35:18+00:00,Fili
+Fiditi,29.93,61,1010,1.08,Clouds,overcast clouds,2025-10-17 11:35:18+00:00,Fiditi
+Ezza-Ohu,30.77,61,1010,1.22,Clouds,overcast clouds,2025-10-17 11:35:19+00:00,Ezza-Ohu
+Eyamba Town,26.68,77,1011,4.0,Clouds,broken clouds,2025-10-17 11:35:19+00:00,Eyamba Town
+Etinan,28.62,69,1011,2.87,Clouds,overcast clouds,2025-10-17 11:35:20+00:00,Etinan
+Ete,30.14,57,1010,2.16,Clouds,overcast clouds,2025-10-17 11:35:20+00:00,Ete
+Esuk Oron,28.4,69,1011,1.79,Clouds,overcast clouds,2025-10-17 11:35:20+00:00,Esuk Oron
+Epe,28.96,70,1010,2.66,Clouds,overcast clouds,2025-10-17 11:35:21+00:00,Epe
+Enugu-Ukwu,30.81,57,1010,1.65,Clouds,broken clouds,2025-10-17 11:35:21+00:00,Enugu-Ukwu
+Enugu-Ezike,29.7,58,1010,2.21,Clouds,overcast clouds,2025-10-17 11:35:21+00:00,Enugu-Ezike
+Enugu,28.66,70,1010,0.0,Clouds,scattered clouds,2025-10-17 11:32:09+00:00,Enugu
+Emure-Ekiti,30.29,54,1010,2.22,Clouds,broken clouds,2025-10-17 11:35:22+00:00,Emure-Ekiti
+Emene,29.08,70,1010,0.0,Clouds,scattered clouds,2025-10-17 11:35:22+00:00,Emene
+Emagiti,33.08,49,1009,1.79,Clouds,broken clouds,2025-10-17 11:35:23+00:00,Emagiti
+Elelem,30.32,61,1010,2.0,Clouds,broken clouds,2025-10-17 11:35:23+00:00,Elelem
+Elele,31.01,66,1010,2.06,Clouds,broken clouds,2025-10-17 11:35:23+00:00,Elele
+Ekpoma,29.39,61,1010,1.56,Clouds,broken clouds,2025-10-17 11:35:24+00:00,Ekpoma
+Eket,27.27,74,1011,2.9,Clouds,overcast clouds,2025-10-17 11:35:24+00:00,Eket
+Ejirin,29.71,67,1010,2.32,Clouds,overcast clouds,2025-10-17 11:35:24+00:00,Ejirin
+Ejigbo,28.93,66,1010,1.65,Clouds,broken clouds,2025-10-17 11:35:25+00:00,Ejigbo
+Eha Amufu,30.07,64,1010,1.88,Clouds,overcast clouds,2025-10-17 11:35:26+00:00,Eha Amufu
+Egbe,30.06,54,1010,1.93,Clouds,broken clouds,2025-10-17 11:35:26+00:00,Egbe
+Efon-Alaaye,28.4,60,1011,1.53,Clouds,overcast clouds,2025-10-17 11:35:27+00:00,Efon-Alaaye
+Effium,30.07,64,1010,0.78,Clouds,overcast clouds,2025-10-17 11:35:27+00:00,Effium
+Ebute Ikorodu,30.18,70,1011,1.54,Clouds,broken clouds,2025-10-17 11:35:28+00:00,Ebute Ikorodu
+Dutsin-Ma,34.46,16,1010,4.57,Clouds,broken clouds,2025-10-17 11:35:28+00:00,Dutsin-Ma
+Dutsen Wai,32.09,29,1010,3.16,Clouds,scattered clouds,2025-10-17 11:35:28+00:00,Dutsen Wai
+Dutse,35.66,20,1009,4.8,Clouds,few clouds,2025-10-17 11:35:29+00:00,Dutse
+Duku,34.86,33,1010,1.42,Clouds,scattered clouds,2025-10-17 11:35:29+00:00,Duku
+Dukku,34.59,23,1009,5.19,Clouds,scattered clouds,2025-10-17 11:35:30+00:00,Dukku
+Doma,32.41,53,1010,1.43,Clouds,broken clouds,2025-10-17 11:35:30+00:00,Doma
+Disina,35.28,22,1009,4.61,Clouds,scattered clouds,2025-10-17 11:35:30+00:00,Disina
+Dindima,34.11,29,1010,4.47,Clouds,broken clouds,2025-10-17 11:35:31+00:00,Dindima
+Dillala,36.65,11,1010,6.02,Clouds,few clouds,2025-10-17 11:35:31+00:00,Dillala
+Dikwa,36.89,11,1009,4.77,Clouds,overcast clouds,2025-10-17 11:35:32+00:00,Dikwa
+Dengi,33.97,35,1009,2.07,Clouds,broken clouds,2025-10-17 11:35:32+00:00,Dengi
+Dekina,31.66,54,1010,1.9,Clouds,overcast clouds,2025-10-17 11:35:32+00:00,Dekina
+Deba,33.53,35,1010,3.21,Clouds,broken clouds,2025-10-17 11:35:33+00:00,Deba
+Daura,35.71,14,1009,5.04,Clouds,scattered clouds,2025-10-17 11:35:33+00:00,Daura
+Daura,35.71,14,1009,5.04,Clouds,scattered clouds,2025-10-17 11:35:33+00:00,Daura
+Darazo,34.62,22,1009,4.79,Clouds,scattered clouds,2025-10-17 11:35:34+00:00,Darazo
+Dapchi,36.76,11,1009,5.28,Clouds,scattered clouds,2025-10-17 11:35:34+00:00,Dapchi
+Dan Sadau,32.98,30,1010,1.71,Clouds,scattered clouds,2025-10-17 11:35:35+00:00,Dan Sadau
+Dankama,35.81,13,1010,4.75,Clouds,broken clouds,2025-10-17 11:35:35+00:00,Dankama
+Dankalwa,35.63,15,1009,5.54,Clouds,broken clouds,2025-10-17 11:35:35+00:00,Dankalwa
+Danja,32.09,26,1010,3.97,Clouds,scattered clouds,2025-10-17 11:35:36+00:00,Danja
+Dan Gora,33.72,22,1010,3.68,Clouds,scattered clouds,2025-10-17 11:35:36+00:00,Dan Gora
+Dange,34.47,22,1010,2.03,Clear,clear sky,2025-10-17 11:35:37+00:00,Dange
+Damboa,34.18,25,1010,3.25,Clouds,overcast clouds,2025-10-17 11:35:37+00:00,Damboa
+Dambatta,35.39,16,1010,5.59,Clouds,few clouds,2025-10-17 11:35:37+00:00,Dambatta
+Damaturu,36.17,13,1009,5.65,Clouds,scattered clouds,2025-10-17 11:35:38+00:00,Damaturu
+Damasak,36.4,11,1010,7.54,Clouds,overcast clouds,2025-10-17 11:35:38+00:00,Damasak
+Dakingari,33.7,38,1010,1.87,Clouds,few clouds,2025-10-17 11:35:39+00:00,Dakingari
+Dadiya,32.64,42,1010,1.69,Clouds,overcast clouds,2025-10-17 11:35:39+00:00,Dadiya
+Dabai,32.7,32,1010,1.84,Clouds,scattered clouds,2025-10-17 11:35:40+00:00,Dabai
+Cross River State,29.6,63,1010,0.38,Clouds,overcast clouds,2025-10-17 11:35:40+00:00,Cross River State
+Tsafe,32.88,22,1010,3.27,Clouds,broken clouds,2025-10-17 11:35:40+00:00,Tsafe
+Calabar,27.27,76,1011,1.27,Clouds,overcast clouds,2025-10-17 11:35:41+00:00,Calabar
+Burutu,29.47,65,1010,3.3,Clouds,overcast clouds,2025-10-17 11:35:41+00:00,Burutu
+Burumburum,34.01,22,1010,4.18,Clouds,scattered clouds,2025-10-17 11:35:41+00:00,Burumburum
+Bunza,34.36,33,1010,2.11,Clouds,few clouds,2025-10-17 11:35:42+00:00,Bunza
+Bununu,33.85,28,1010,3.78,Clouds,broken clouds,2025-10-17 11:35:42+00:00,Bununu
+Dass,33.72,27,1010,3.98,Clouds,scattered clouds,2025-10-17 11:35:42+00:00,Dass
+Bukuru,27.6,37,1011,5.26,Clouds,scattered clouds,2025-10-17 11:35:43+00:00,Bukuru
+Buguma,29.86,61,1010,3.06,Clouds,broken clouds,2025-10-17 11:35:43+00:00,Buguma
+Buga,17.6,95,1015,0.6,Clouds,overcast clouds,2025-10-17 11:34:05+00:00,Buga
+Twon-Brass,26.55,77,1011,3.65,Clouds,scattered clouds,2025-10-17 11:35:44+00:00,Twon-Brass
+Bornu Yassu,36.23,13,1009,5.18,Clouds,overcast clouds,2025-10-17 11:35:44+00:00,Bornu Yassu
+Borno State,34.99,21,1010,3.76,Clouds,overcast clouds,2025-10-17 11:35:45+00:00,Borno State
+Bori,28.51,68,1011,3.47,Clouds,broken clouds,2025-10-17 11:35:45+00:00,Bori
+Ugbokpo,30.38,62,1010,2.1,Clouds,overcast clouds,2025-10-17 11:35:45+00:00,Ugbokpo
+Bonny,26.76,77,1011,4.04,Clouds,broken clouds,2025-10-17 11:35:46+00:00,Bonny
+Bomadi,29.64,66,1010,1.4,Clouds,broken clouds,2025-10-17 11:35:47+00:00,Bomadi
+Bolori,35.31,16,1009,3.66,Clouds,overcast clouds,2025-10-17 11:35:47+00:00,Bolori
+Bokkos,26.28,42,1012,4.98,Clouds,broken clouds,2025-10-17 11:35:47+00:00,Bokkos
+Bokani,32.89,49,1010,1.52,Clouds,overcast clouds,2025-10-17 11:35:48+00:00,Bokani
+Boju,29.73,64,1010,2.26,Clouds,overcast clouds,2025-10-17 11:35:48+00:00,Boju
+Boi,30.53,39,1011,2.99,Clouds,broken clouds,2025-10-17 11:35:49+00:00,Boi
+Bode Saadu,33.1,48,1010,1.95,Clouds,broken clouds,2025-10-17 11:35:49+00:00,Bode Saadu
+Biu,31.03,30,1010,3.51,Clouds,overcast clouds,2025-10-17 11:35:49+00:00,Biu
+Birniwa,36.57,11,1009,5.61,Clouds,scattered clouds,2025-10-17 11:35:50+00:00,Birniwa
+Birnin Kudu,35.08,22,1009,4.65,Clouds,few clouds,2025-10-17 11:35:50+00:00,Birnin Kudu
+Birnin Kebbi,34.71,28,1010,1.63,Clouds,few clouds,2025-10-17 11:35:51+00:00,Birnin Kebbi
+Sofo-Birnin-Gwari,32.24,31,1010,2.15,Clouds,broken clouds,2025-10-17 11:35:51+00:00,Sofo-Birnin-Gwari
+Birim,34.36,28,1009,4.49,Clouds,broken clouds,2025-10-17 11:35:51+00:00,Birim
+Bin Yauri,34.47,39,1009,0.86,Clouds,broken clouds,2025-10-17 11:35:52+00:00,Bin Yauri
+Binji,35.67,20,1009,1.75,Clear,clear sky,2025-10-17 11:35:52+00:00,Binji
+Billiri,32.0,38,1010,2.8,Clouds,overcast clouds,2025-10-17 11:35:52+00:00,Billiri
+Bida,33.33,49,1009,1.8,Clouds,broken clouds,2025-10-17 11:35:53+00:00,Bida
+Benue State,31.38,60,1010,0.33,Clouds,broken clouds,2025-10-17 11:35:53+00:00,Benue State
+Benisheikh,35.43,16,1010,5.28,Clouds,overcast clouds,2025-10-17 11:35:53+00:00,Benisheikh
+Benin City,29.68,68,1010,0.38,Clouds,overcast clouds,2025-10-17 11:35:54+00:00,Benin City
+Bende,30.13,61,1010,1.12,Clouds,overcast clouds,2025-10-17 11:35:54+00:00,Bende
+Bena,32.6,31,1010,2.73,Clouds,broken clouds,2025-10-17 11:35:54+00:00,Bena
+Beli,32.06,52,1010,1.27,Clouds,broken clouds,2025-10-17 11:35:55+00:00,Beli
+Bebeji,34.75,19,1009,4.01,Clouds,scattered clouds,2025-10-17 11:35:55+00:00,Bebeji
+Bauchi State,34.16,25,1010,5.11,Clouds,scattered clouds,2025-10-17 11:35:55+00:00,Bauchi State
+Bauchi,34.16,25,1010,5.11,Clouds,scattered clouds,2025-10-17 11:35:55+00:00,Bauchi
+Batsari,34.94,15,1010,4.23,Clouds,scattered clouds,2025-10-17 11:35:57+00:00,Batsari
+Baro,33.07,52,1010,1.78,Clouds,broken clouds,2025-10-17 11:35:57+00:00,Baro
+Bara,31.88,32,1009,1.25,Clouds,broken clouds,2025-10-17 11:35:58+00:00,Bara
+Bama,35.96,16,1009,3.58,Clouds,overcast clouds,2025-10-17 11:35:58+00:00,Bama
+Bakori,32.27,25,1010,4.1,Clouds,scattered clouds,2025-10-17 11:35:59+00:00,Bakori
+Baissa,32.07,50,1009,1.32,Clouds,broken clouds,2025-10-17 11:35:59+00:00,Baissa
+Bagudo,33.9,39,1010,2.18,Clouds,scattered clouds,2025-10-17 11:36:00+00:00,Bagudo
+Bugana,32.1,57,1010,1.0,Clouds,broken clouds,2025-10-17 11:36:00+00:00,Bugana
+Badeggi,33.42,50,1009,1.7,Clouds,broken clouds,2025-10-17 11:36:01+00:00,Badeggi
+Badakoshi,33.92,25,1010,4.92,Clouds,scattered clouds,2025-10-17 11:36:01+00:00,Badakoshi
+Badagry,27.85,74,1011,3.58,Clouds,overcast clouds,2025-10-17 11:36:01+00:00,Badagry
+Babura,36.17,15,1009,5.73,Clouds,few clouds,2025-10-17 11:36:02+00:00,Babura
+Babana,33.72,39,1010,1.99,Clouds,scattered clouds,2025-10-17 11:36:02+00:00,Babana
+Azare,35.42,20,1009,4.62,Clouds,scattered clouds,2025-10-17 11:36:02+00:00,Azare
+Awka,31.39,57,1010,1.75,Clouds,broken clouds,2025-10-17 11:36:03+00:00,Awka
+Awgu,29.84,64,1010,2.06,Clouds,overcast clouds,2025-10-17 11:36:03+00:00,Awgu
+Auna,33.18,46,1010,0.38,Clouds,overcast clouds,2025-10-17 11:36:04+00:00,Auna
+Auchi,30.7,58,1010,1.79,Clouds,broken clouds,2025-10-17 11:36:04+00:00,Auchi
+Asaba,31.52,58,1010,1.19,Clouds,broken clouds,2025-10-17 11:36:04+00:00,Asaba
+Arochukwu,29.1,66,1010,1.66,Clouds,overcast clouds,2025-10-17 11:36:05+00:00,Arochukwu
+Argungu,35.3,25,1009,1.34,Clear,clear sky,2025-10-17 11:36:06+00:00,Argungu
+Aramoko-Ekiti,28.31,63,1011,1.44,Clouds,overcast clouds,2025-10-17 11:36:06+00:00,Aramoko-Ekiti
+Apomu,28.92,63,1010,1.16,Clouds,broken clouds,2025-10-17 11:36:07+00:00,Apomu
+Ankpa,30.12,57,1010,2.16,Clouds,broken clouds,2025-10-17 11:36:07+00:00,Ankpa
+Anka,34.62,24,1010,3.07,Clouds,few clouds,2025-10-17 11:36:08+00:00,Anka
+Anchau,32.63,26,1010,3.59,Clouds,scattered clouds,2025-10-17 11:36:08+00:00,Anchau
+Anambra State,31.75,56,1010,1.06,Clouds,broken clouds,2025-10-17 11:36:09+00:00,Anambra State
+Amper,32.58,38,1010,2.36,Clouds,broken clouds,2025-10-17 11:36:09+00:00,Amper
+Amassoma,28.97,69,1010,1.23,Clouds,broken clouds,2025-10-17 11:36:09+00:00,Amassoma
+Amaigbo,30.14,64,1010,1.42,Clouds,overcast clouds,2025-10-17 11:36:10+00:00,Amaigbo
+Amagunze,29.39,70,1010,0.0,Clouds,scattered clouds,2025-10-17 11:36:10+00:00,Amagunze
+Aliade,27.13,76,1010,1.28,Clouds,overcast clouds,2025-10-17 11:36:11+00:00,Aliade
+Alapa,31.78,50,1010,1.66,Clouds,broken clouds,2025-10-17 11:36:11+00:00,Alapa
+Akwanga,30.65,52,1010,1.62,Clouds,broken clouds,2025-10-17 11:36:12+00:00,Akwanga
+Akwa Ibom State,29.01,66,1010,2.51,Clouds,overcast clouds,2025-10-17 11:36:12+00:00,Akwa Ibom State
+Akure,30.6,54,1010,1.77,Clouds,broken clouds,2025-10-17 11:36:13+00:00,Akure
+Aku,30.79,56,1010,1.59,Clouds,overcast clouds,2025-10-17 11:36:13+00:00,Aku
+Akko,28.26,58,1017,5.14,Clouds,few clouds,2025-10-17 11:33:28+00:00,Akko
+Ake-Eze,30.21,65,1010,1.47,Clouds,overcast clouds,2025-10-17 11:36:14+00:00,Ake-Eze
+Akankpa,26.14,80,1011,1.71,Clouds,overcast clouds,2025-10-17 11:36:15+00:00,Akankpa
+Ajibo,29.42,67,1010,1.06,Clouds,broken clouds,2025-10-17 11:36:16+00:00,Ajibo
+Ajasse Ipo,30.49,55,1010,2.13,Clouds,broken clouds,2025-10-17 11:36:17+00:00,Ajasse Ipo
+Ajaokuta,32.81,54,1010,1.26,Clouds,broken clouds,2025-10-17 11:36:18+00:00,Ajaokuta
+Ahoada,30.55,60,1010,1.61,Clouds,broken clouds,2025-10-17 11:36:19+00:00,Ahoada
+Agulu,30.82,58,1010,1.87,Clouds,broken clouds,2025-10-17 11:36:19+00:00,Agulu
+Ago-Are,29.99,61,1011,1.25,Clouds,overcast clouds,2025-10-17 11:36:20+00:00,Ago-Are
+Agenebode,31.17,61,1010,1.43,Clouds,broken clouds,2025-10-17 11:36:21+00:00,Agenebode
+Agbor,28.67,74,1010,0.99,Clouds,overcast clouds,2025-10-17 11:36:21+00:00,Agbor
+Agbabu,30.66,62,1010,0.25,Clouds,overcast clouds,2025-10-17 11:36:22+00:00,Agbabu
+Agaie,33.54,50,1009,1.58,Clouds,broken clouds,2025-10-17 11:36:22+00:00,Agaie
+Afikpo,30.1,63,1010,1.34,Clouds,overcast clouds,2025-10-17 11:36:24+00:00,Afikpo
+Adoru,32.52,55,1010,0.67,Clouds,overcast clouds,2025-10-17 11:36:25+00:00,Adoru
+Ado-Odo,29.33,66,1011,2.86,Clouds,overcast clouds,2025-10-17 11:36:26+00:00,Ado-Odo
+Ado-Ekiti,29.92,57,1010,1.4,Clouds,overcast clouds,2025-10-17 11:36:28+00:00,Ado-Ekiti
+Adani,31.05,61,1010,1.13,Clouds,overcast clouds,2025-10-17 11:36:30+00:00,Adani
+Federal Capital Territory,27.69,51,1010,1.08,Clouds,scattered clouds,2025-10-17 11:36:31+00:00,Federal Capital Territory
+Abuja,28.08,53,1010,2.74,Clouds,scattered clouds,2025-10-17 11:36:32+00:00,Abuja
+Abraka,30.72,63,1010,0.36,Clouds,overcast clouds,2025-10-17 11:36:33+00:00,Abraka
+Abocho,30.16,53,1010,1.9,Clouds,overcast clouds,2025-10-17 11:36:33+00:00,Abocho
+Abeokuta,30.19,63,1010,1.51,Clouds,broken clouds,2025-10-17 11:36:34+00:00,Abeokuta
+Abakaliki,30.77,61,1010,1.5,Clouds,overcast clouds,2025-10-17 11:36:35+00:00,Abakaliki
+Abak,29.7,63,1010,2.53,Clouds,overcast clouds,2025-10-17 11:36:35+00:00,Abak
+Aba,30.21,59,1010,1.91,Clouds,overcast clouds,2025-10-17 11:36:36+00:00,Aba
+Abia State,29.68,62,1010,1.63,Clouds,overcast clouds,2025-10-17 11:36:36+00:00,Abia State
+Delta State,30.23,63,1010,1.47,Clouds,overcast clouds,2025-10-17 11:36:37+00:00,Delta State
+Adamawa State,32.24,49,1010,1.92,Clouds,overcast clouds,2025-10-17 11:36:38+00:00,Adamawa State
+Edo,27.67,81,1010,1.0,Clouds,overcast clouds,2025-10-17 11:36:39+00:00,Edo
+Enugu State,28.75,70,1010,0.0,Clouds,scattered clouds,2025-10-17 11:36:40+00:00,Enugu State
+Jigawa State,35.91,19,1009,4.6,Clouds,scattered clouds,2025-10-17 11:36:41+00:00,Jigawa State
+Shogunle,29.95,70,1011,1.54,Clouds,broken clouds,2025-10-17 11:36:43+00:00,Shogunle
+Imogwu,31.01,66,1010,2.06,Clouds,broken clouds,2025-10-17 11:36:44+00:00,Imogwu
+Degema Hulk,30.13,60,1010,2.58,Clouds,broken clouds,2025-10-17 11:36:45+00:00,Degema Hulk
+Orogbum,31.12,61,1010,3.3,Clouds,broken clouds,2025-10-17 11:36:45+00:00,Orogbum
+Takurza,32.12,43,1009,3.09,Clear,clear sky,2025-10-17 11:36:46+00:00,Takurza
+Bayelsa State,30.89,59,1010,1.54,Clouds,broken clouds,2025-10-17 11:36:46+00:00,Bayelsa State
+Ebonyi State,30.73,62,1010,1.69,Clouds,overcast clouds,2025-10-17 11:36:47+00:00,Ebonyi State
+Ekiti State,30.21,58,1010,1.28,Clouds,overcast clouds,2025-10-17 11:36:47+00:00,Ekiti State
+Gombe State,32.99,33,1010,3.87,Clouds,broken clouds,2025-10-17 11:36:47+00:00,Gombe State
+Nasarawa State,33.08,53,1010,1.13,Clouds,scattered clouds,2025-10-17 11:36:48+00:00,Nasarawa State
+Zamfara State,34.16,22,1010,3.6,Clouds,few clouds,2025-10-17 11:36:48+00:00,Zamfara State
+Kebbi State,34.15,38,1010,2.28,Clouds,scattered clouds,2025-10-17 11:36:48+00:00,Kebbi State
+Kogi State,32.82,54,1010,1.55,Clouds,overcast clouds,2025-10-17 11:36:49+00:00,Kogi State
+Osun State,29.2,70,1010,0.72,Clouds,broken clouds,2025-10-17 11:36:49+00:00,Osun State
+Taraba State,31.57,50,1009,1.64,Clouds,broken clouds,2025-10-17 11:36:50+00:00,Taraba State
+Yobe State,37.4,11,1009,5.2,Clouds,scattered clouds,2025-10-17 11:36:50+00:00,Yobe State
+Alodifi,30.85,53,1010,1.96,Clouds,broken clouds,2025-10-17 11:36:51+00:00,Alodifi
+Ishie Town,27.03,77,1011,1.09,Clouds,overcast clouds,2025-10-17 11:36:51+00:00,Ishie Town
+Hanwa,32.42,28,1010,3.84,Clouds,scattered clouds,2025-10-17 11:36:51+00:00,Hanwa
+Sire,34.8,22,1010,1.88,Clear,clear sky,2025-10-17 11:36:51+00:00,Sire
+Afaha Oku,27.78,73,1011,2.6,Clouds,overcast clouds,2025-10-17 11:36:52+00:00,Afaha Oku

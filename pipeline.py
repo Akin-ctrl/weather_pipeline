@@ -1,59 +1,102 @@
-# pipeline.py
-
 import os
 import time
 import logging
-import schedule
+from datetime import datetime, timezone
+
 import requests
 import psycopg2
-from psycopg2 import sql
+import schedule
 from dotenv import load_dotenv
+import json
 
-# --- 1. SETUP AND CONFIGURATION ---
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# --- CONFIGURATION ---
 # Load environment variables from .env file
 load_dotenv()
 
-# Get credentials and configurations from environment variables
-API_KEY = os.getenv("OPENWEATHER_API_KEY")
+# Set up basic logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Load credentials and settings from environment variables
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_NAME = os.getenv("DB_NAME")
 DB_HOST = os.getenv("DB_HOST") # This will be 'db' from docker-compose
 
 # List of cities to monitor
-CITIES = ["London", "New York", "Tokyo", "Sydney", "Paris"]
-API_BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+with open("city.list.json", "r", encoding="utf-8") as read:
+    cities = json.load(read)
 
-# --- 2. DATABASE HELPER FUNCTIONS ---
+# Filter cities for Nigeria (country code = 'NG')
+nigeria_cities = [c for c in cities if c["country"] == "NG"]
 
+# Extract just the city names into a list
+nigeria_city_names = [c["name"] for c in nigeria_cities]
+
+def fetch_weather(city: str) -> dict | None:
+    """Fetches weather data for a given city from the OpenWeatherMap API."""
+    api_url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={OPENWEATHER_API_KEY}"
+    try:
+        response = requests.get(api_url, timeout=10)
+        response.raise_for_status()  # Raises an HTTPError for bad responses (4xx or 5xx)
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        logging.error(f"API request failed for {city}: {e}")
+        return None
+
+def process_weather_data(city: str, data: dict) -> dict | None:
+    """Processes raw JSON data into a structured dictionary."""
+    if not data:
+        return None
+    try:
+        processed = {
+            "city_name": city,
+            # Convert temperature from Kelvin to Celsius
+            "temperature": round(data['main']['temp'] - 273.15, 2),
+            "humidity": data['main']['humidity'],
+            "pressure": data['main']['pressure'],
+            "wind_speed": data['wind']['speed'],
+            "weather_main": data['weather'][0]['main'],
+            "weather_desc": data['weather'][0]['description'],
+            # Convert Unix timestamp to a timezone-aware datetime object
+            "reading_timestamp": datetime.fromtimestamp(data['dt'], tz=timezone.utc)
+        }
+        return processed
+    except (KeyError, IndexError) as e:
+        logging.error(f"Error processing data for {city}. Missing key: {e}")
+        return None
+
+# --- DATABASE SETUP ---
 def get_db_connection():
     """Establishes a connection to the PostgreSQL database."""
-    while True:
-        try:
-            conn = psycopg2.connect(
-                dbname=DB_NAME,
-                user=DB_USER,
-                password=DB_PASSWORD,
-                host=DB_HOST
-            )
-            logging.info("Database connection successful.")
-            return conn
-        except psycopg2.OperationalError as e:
-            logging.error(f"Database connection failed: {e}. Retrying in 5 seconds...")
-            time.sleep(5)
+    try:
+        conn = psycopg2.connect(
+            dbname=DB_NAME,
+            user=DB_USER,
+            password=DB_PASSWORD,
+            host=DB_HOST
+        )
+        return conn
+    except psycopg2.OperationalError as e:
+        logging.error(f"Could not connect to the database: {e}")
+        return None
 
-def create_table_if_not_exists(conn):
-    """Creates the weather_readings table if it doesn't already exist."""
+def initialize_database():
+    """Creates the weather_readings table if it doesn't exist."""
+    conn = get_db_connection()
+    if conn is None:
+        logging.error("Database connection failed. Table initialization skipped.")
+        return
+
+    # Use a 'with' statement for cursor management
     with conn.cursor() as cur:
         cur.execute("""
             CREATE TABLE IF NOT EXISTS weather_readings (
                 id SERIAL PRIMARY KEY,
                 city_name VARCHAR(255) NOT NULL,
-                temperature_celsius FLOAT NOT NULL,
+                temperature FLOAT NOT NULL,
                 humidity INTEGER,
                 pressure INTEGER,
                 wind_speed FLOAT,
@@ -64,107 +107,75 @@ def create_table_if_not_exists(conn):
             );
         """)
         conn.commit()
-        logging.info("Table 'weather_readings' is ready.")
+        logging.info("Database initialized. 'weather_readings' table is ready.")
+    conn.close()
 
-def store_data(conn, weather_data):
-    """Inserts processed weather data into the database."""
+def store_weather_data(weather_data: dict):
+    """Inserts processed weather data into the PostgreSQL database."""
+    if not weather_data:
+        return
+
+    conn = get_db_connection()
+    if conn is None:
+        logging.error(f"Could not store data for {weather_data['city_name']} due to DB connection failure.")
+        return
+
+    sql = """
+        INSERT INTO weather_readings (city_name, temperature, humidity, pressure, wind_speed, weather_main, weather_desc, reading_timestamp)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s);
+    """
+    
     with conn.cursor() as cur:
-        # Using psycopg2.sql for safe dynamic table/column names (not needed here but good practice)
-        # and parameterized queries (%s) to prevent SQL injection.
-        insert_query = sql.SQL("""
-            INSERT INTO weather_readings (city_name, temperature_celsius, humidity, pressure, wind_speed, weather_main, weather_desc, reading_timestamp)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, TO_TIMESTAMP(%s));
-        """)
         try:
-            cur.execute(insert_query, (
-                weather_data['city'],
-                weather_data['temp_celsius'],
+            cur.execute(sql, (
+                weather_data['city_name'],
+                weather_data['temperature'],
                 weather_data['humidity'],
                 weather_data['pressure'],
                 weather_data['wind_speed'],
                 weather_data['weather_main'],
                 weather_data['weather_desc'],
-                weather_data['dt']
+                weather_data['reading_timestamp']
             ))
             conn.commit()
-            logging.info(f"Successfully stored data for {weather_data['city']}.")
-        except Exception as e:
-            logging.error(f"Error storing data for {weather_data['city']}: {e}")
-            conn.rollback() # Rollback the transaction on error
+            logging.info(f"Successfully stored weather data for {weather_data['city_name']}.")
+        except psycopg2.Error as e:
+            logging.error(f"Database insertion failed for {weather_data['city_name']}: {e}")
+            conn.rollback() # Roll back the transaction on error
+    conn.close()
 
-# --- 3. API AND PROCESSING FUNCTIONS ---
-
-def fetch_weather(city):
-    """Fetches weather data for a given city from the OpenWeatherMap API."""
-    params = {
-        'q': city,
-        'appid': API_KEY,
-        'units': 'metric' # Request temperature in Celsius
-    }
-    try:
-        response = requests.get(API_BASE_URL, params=params)
-        response.raise_for_status()  # Raises an HTTPError for bad responses (4xx or 5xx)
-        logging.info(f"Successfully fetched data for {city}.")
-        return response.json()
-    except requests.exceptions.RequestException as e:
-        logging.error(f"API request failed for {city}: {e}")
-        return None
-
-def process_weather(raw_data):
-    """Processes raw JSON data into a clean dictionary."""
-    if not raw_data:
-        return None
-    
-    return {
-        'city': raw_data['name'],
-        'temp_celsius': raw_data['main']['temp'],
-        'humidity': raw_data['main']['humidity'],
-        'pressure': raw_data['main']['pressure'],
-        'wind_speed': raw_data['wind']['speed'],
-        'weather_main': raw_data['weather'][0]['main'],
-        'weather_desc': raw_data['weather'][0]['description'],
-        'dt': raw_data['dt'] # Timestamp from API (seconds since epoch)
-    }
-
-# --- 4. MAIN PIPELINE JOB ---
-
-def pipeline_job():
-    """The main job that orchestrates the fetch, process, and store steps."""
-    logging.info("--- Starting pipeline job ---")
-    conn = get_db_connection()
-    if conn is None:
-        logging.error("Could not establish database connection. Aborting job.")
-        return
-
-    try:
-        for city in CITIES:
-            raw_data = fetch_weather(city)
-            if raw_data:
-                processed_data = process_weather(raw_data)
-                if processed_data:
-                    store_data(conn, processed_data)
-            time.sleep(1) # Small delay to avoid overwhelming the API
-    finally:
-        conn.close()
-        logging.info("Database connection closed.")
-        logging.info("--- Pipeline job finished ---")
-
-# --- 5. SCHEDULING AND EXECUTION ---
+# --- MAIN JOB AND SCHEDULING ---
+def weather_pipeline_job():
+    """The main job that runs the ETL process for all cities."""
+    logging.info("Starting weather data pipeline job...")
+    for city in nigeria_city_names:
+        raw_data = fetch_weather(city)
+        if raw_data:
+            processed_data = process_weather_data(city, raw_data)
+            store_weather_data(processed_data)
+    logging.info("Weather data pipeline job finished.")
 
 if __name__ == "__main__":
-    # On the very first run, set up the database table
-    conn = get_db_connection()
-    if conn:
-        create_table_if_not_exists(conn)
-        conn.close()
+
+    # Check for the essential API key before starting
+    if not OPENWEATHER_API_KEY:
+        raise ValueError("OPENWEATHER_API_KEY environment variable not set. The pipeline cannot start.")
+
+    # Initialize the database and create the table on the first run
+    # A small delay to ensure the DB container is fully ready
+    logging.info("Waiting for the database container to be ready...")
+    time.sleep(10) 
+    initialize_database()
+
+    # 3. Schedule the job to run periodically
+    # For demonstration, we run it every 10 minutes.
+    schedule.every(10).minutes.do(weather_pipeline_job)
     
-    # Schedule the job to run every 10 minutes
-    schedule.every(10).minutes.do(pipeline_job)
-    
-    # Run the job once immediately at the start
-    logging.info("Running initial pipeline job...")
-    pipeline_job()
-    
+    # 4. Run the job once immediately at the start
+    logging.info("Running the first job immediately...")
+    weather_pipeline_job()
+
+    # 5. Start the scheduler loop
     logging.info("Scheduler started. Waiting for the next run...")
     while True:
         schedule.run_pending()
