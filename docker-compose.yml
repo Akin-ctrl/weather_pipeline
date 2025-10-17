@@ -1,0 +1,47 @@
+
+version: '3.8'
+
+services:
+  database:
+    image: postgres:16-alpine
+    container_name: weather_db
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432" # Expose port to host for debugging (optional)
+
+  pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile_pipeline
+    container_name: weather_pipeline
+    depends_on:
+      - db
+    environment:
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - DB_HOST=db # Use the service name 'db' to connect
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile_dashboard
+    container_name: weather_dashboard
+    depends_on:
+      - db
+    ports:
+      - "8501:8501"
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - DB_HOST=db
+
+volumes:
+  postgres_data:
