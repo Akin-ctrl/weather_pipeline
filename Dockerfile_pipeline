@@ -9,6 +9,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY nigerian_cities.csv .
 COPY pipeline.py .
 COPY load_database.py .
+COPY dashboard.py .
 
 # This command will be executed when the container starts
 CMD ["python", "pipeline.py"]

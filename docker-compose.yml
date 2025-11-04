@@ -1,6 +1,4 @@
 
-version: '3.8'
-
 services:
   database:
     image: postgres:16-alpine
@@ -65,20 +63,24 @@ services:
       - database
   
 
-  # dashboard:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile_dashboard
-  #   container_name: weather_dashboard
-  #   depends_on:
-  #     - database
-  #   ports:
-  #     - "8501:8501"
-  #   environment:
-  #     - DB_USER=${DB_USER}
-  #     - DB_PASSWORD=${DB_PASSWORD}
-  #     - DB_NAME=${DB_NAME}
-  #     - DB_HOST=db
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile_pipeline
+    image: dashboard
+    container_name: weather_dashboard
+    depends_on:
+      - database
+    ports:
+      - "8501:8501"
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - DB_HOST=database
+    volumes:
+      - ./:/app
+    command: ["streamlit", "run", "dashboard.py", "--server.port=8501", "--server.address=0.0.0.0"]
 
 volumes:
   postgres_data:
