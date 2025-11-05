@@ -1,6 +1,6 @@
 
 """
-Streamlit dashboard repurposed for the local weather pipeline.
+Streamlit dashboard for the local weather pipeline.
 
 Features:
 - Search/filter by geopolitical zone, state, or city (data pulled from the project's Postgres DB).
@@ -12,6 +12,8 @@ If the DB is unavailable the app will show a helpful error and fall back to city
 
 from typing import List, Dict, Optional
 
+import logging
+
 import os
 import psycopg2
 from psycopg2.extras import RealDictCursor
@@ -21,9 +23,14 @@ import ast
 from dotenv import load_dotenv
 
 load_dotenv()
+try:
+    # optional helper for periodic auto-refresh
+    from streamlit_autorefresh import st_autorefresh
+except Exception:
+    st_autorefresh = None
 
 
-# Helper rerun that works across Streamlit versions
+# Helper rerun 
 def _rerun_app():
     """Attempt to rerun the Streamlit app in a compatible way.
     Tries st.experimental_rerun(), falls back to raising Streamlit's internal
@@ -155,6 +162,11 @@ def sidebar_controls():
     cities = fetch_cities(sel_state_id)
     city_names = [c['city_name'] for c in cities] if cities else []
     st.sidebar.selectbox("City", options=["All"] + city_names, key='sidebar_city')
+
+    # Auto-refresh toggle (defaults to enabled)
+    if 'auto_refresh' not in st.session_state:
+        st.session_state['auto_refresh'] = True
+    st.sidebar.checkbox("Auto-refresh every minute", value=st.session_state['auto_refresh'], key='auto_refresh')
 
     st.sidebar.button("Apply filters", on_click=apply_filters)
 
@@ -322,7 +334,7 @@ def load_local_city_list(csv_path: str = "nigerian_cities.csv") -> pd.DataFrame:
 
 
 def show_overview():
-    st.header("Overview — Major Nigerian Cities")
+    st.header("Major Nigerian Cities")
     cols = st.columns(3)
     conn = get_db_connection()
     # Show major cities grid; if DB has readings show them, otherwise show placeholders
@@ -342,7 +354,7 @@ def show_overview():
                 reading = fetch_latest_reading(city_id)
                 if reading:
                     st.metric("Temperature", f"{reading['temperature']} °C")
-                    st.write(f"**{reading['weather_main']}** — {reading['weather_desc']}")
+                    st.write(f"**{reading['weather_main']}**: {reading['weather_desc']}")
                     st.write(f"Humidity: {reading['humidity']}%")
                     # clickable detail
                     st.button("View details", key=f"view_{city_id}", on_click=goto_city, args=(city_id, city))
@@ -399,19 +411,29 @@ def show_city_detail(city_id: int):
     reading = fetch_latest_reading(city_id)
     if not reading:
         st.warning("No readings available for this city yet.")
-        # continue to show metadata/map even if no readings
 
     col1, col2, col3 = st.columns(3)
-    with col1:
-        st.metric("Temperature", f"{reading['temperature']} °C")
-    with col2:
-        st.metric("Humidity", f"{reading['humidity']}%")
-    with col3:
-        st.metric("Wind Speed", f"{reading['wind_speed']} m/s")
+    if reading:
+        with col1:
+            st.metric("Temperature", f"{reading['temperature']} °C")
+        with col2:
+            st.metric("Humidity", f"{reading['humidity']}%")
+        with col3:
+            st.metric("Wind Speed", f"{reading['wind_speed']} m/s")
 
-    st.markdown(f"**Description:** {reading['weather_main']} — {reading['weather_desc']}")
-    st.markdown(f"**Pressure:** {reading['pressure']} hPa")
-    st.markdown(f"**Last updated:** {reading['reading_timestamp']}")
+        st.markdown(f"**Description:** {reading['weather_main']} — {reading['weather_desc']}")
+        st.markdown(f"**Pressure:** {reading['pressure']} hPa")
+        st.markdown(f"**Last updated:** {reading['reading_timestamp']}")
+    else:
+        with col1:
+            st.metric("Temperature", "—")
+        with col2:
+            st.metric("Humidity", "—")
+        with col3:
+            st.metric("Wind Speed", "—")
+        st.markdown("**Description:** —")
+        st.markdown("**Pressure:** —")
+        st.markdown("**Last updated:** —")
 
     # show map
     lat = city_meta.get("latitude") if isinstance(city_meta, dict) else city_meta[2]
@@ -422,7 +444,7 @@ def show_city_detail(city_id: int):
 
 
 def show_zone_overview(zone_id: int):
-    st.header("Overview — Cities in zone")
+    st.header("Overview: Cities in Zone")
     zone_name = None
     zones = fetch_zones()
     for z in zones:
@@ -444,14 +466,14 @@ def show_zone_overview(zone_id: int):
             reading = fetch_latest_reading(cid)
             if reading:
                 st.metric("Temperature", f"{reading['temperature']} °C")
-                st.write(f"**{reading['weather_main']}** — {reading['weather_desc']}")
+                st.write(f"**{reading['weather_main']}**: {reading['weather_desc']}")
                 st.button("View details", key=f"zone_view_{cid}", on_click=goto_city, args=(cid, c.get('city_name') if isinstance(c, dict) else c[1]))
             else:
                 st.info("No readings yet")
 
 
 def show_state_overview(state_id: int):
-    st.header("Overview — Cities in state")
+    st.header("Overview: Cities in state")
     state_name = None
     states = fetch_states()
     for s in states:
@@ -472,7 +494,7 @@ def show_state_overview(state_id: int):
             reading = fetch_latest_reading(cid)
             if reading:
                 st.metric("Temperature", f"{reading['temperature']} °C")
-                st.write(f"**{reading['weather_main']}** — {reading['weather_desc']}")
+                st.write(f"**{reading['weather_main']}**: {reading['weather_desc']}")
                 st.button("View details", key=f"state_view_{cid}", on_click=goto_city, args=(cid, c.get('city_name') if isinstance(c, dict) else c[1]))
             else:
                 st.info("No readings yet")
@@ -480,7 +502,7 @@ def show_state_overview(state_id: int):
 
 def main():
     st.set_page_config(page_title="Nigeria Weather Dashboard", page_icon="🌦️", layout="wide")
-    st.title("🌦️ Nigeria Weather Dashboard")
+    st.title("Nigeria Weather Dashboard")
     st.write("Browse weather by geopolitical zone, state, or city. Data is read from the project's Postgres database.")
 
     conn = get_db_connection()
@@ -489,6 +511,15 @@ def main():
 
     # Sidebar controls (use callback-driven navigation)
     sidebar_controls()
+
+    # If user enabled auto-refresh, trigger a periodic rerun every 60s
+    if st.session_state.get('auto_refresh'):
+        if st_autorefresh is not None:
+            # interval in milliseconds
+            st_autorefresh(interval=60 * 1000, key="autorefresh")
+        else:
+            # developer environment: advise that the optional package is missing
+            st.sidebar.info("Auto-refresh disabled: install 'streamlit-autorefresh' to enable automatic updates every minute.")
 
     # initialize navigation/session keys
     if 'view' not in st.session_state:
