@@ -6,10 +6,13 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY nigerian_cities.csv .
-COPY pipeline.py .
-COPY load_database.py .
-COPY dashboard.py .
+# Copy organized project structure
+COPY data/ ./data/
+COPY sql/ ./sql/
+COPY app/ ./app/
+COPY run_pipeline.py .
+COPY run_seeder.py .
+COPY run_dashboard.py .
 
 # This command will be executed when the container starts
-CMD ["python", "pipeline.py"]
+CMD ["python", "run_pipeline.py"]

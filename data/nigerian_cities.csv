@@ -1,0 +1,522 @@
+id,name,country,coord,geopolitical_zone,state
+2317548,Zuru,NG,"{'lon': 5.22879, 'lat': 11.42406}",North West,Kebbi
+2317569,Zungeru,NG,"{'lon': 6.15583, 'lat': 9.81278}",North Central,Niger
+2317765,Zaria,NG,"{'lon': 7.7227, 'lat': 11.11128}",North West,Kaduna
+2317818,Zango,NG,"{'lon': 8.48765, 'lat': 13.05151}",North West,Jigawa
+2317887,Zalanga,NG,"{'lon': 10.17647, 'lat': 10.61432}",North East,Gombe
+2317899,Zaki Biam,NG,"{'lon': 9.61667, 'lat': 7.51667}",North Central,Benue
+2317936,Zadawa,NG,"{'lon': 10.3672, 'lat': 11.4496}",North West,Jigawa
+2317982,Yuli,NG,"{'lon': 10.27444, 'lat': 9.69889}",,
+2318044,Yola,NG,"{'lon': 12.48333, 'lat': 9.2}",North East,Adamawa
+2318123,Yenagoa,NG,"{'lon': 6.26417, 'lat': 4.92472}",South South,Bayelsa
+2318166,Yelwa,NG,"{'lon': 9.63333, 'lat': 8.83333}",North West,Kebbi
+2318238,Yashikira,NG,"{'lon': 3.4, 'lat': 9.76667}",North Central,Kwara
+2318374,Yandev,NG,"{'lon': 9.05, 'lat': 7.36667}",North Central,Benue
+2318383,Yanda Bayo,NG,"{'lon': 10.7459, 'lat': 11.5071}",,
+2318399,Yamrat,NG,"{'lon': 9.82604, 'lat': 10.11161}",,
+2318480,Yajiwa,NG,"{'lon': 12.7236, 'lat': 11.38385}",North East,Borno
+2318534,Wuyo,NG,"{'lon': 11.69678, 'lat': 10.38522}",North East,Borno
+2318560,Wusasa,NG,"{'lon': 7.67925, 'lat': 11.07543}",North West,Kaduna
+2318858,Wurno,NG,"{'lon': 5.42326, 'lat': 13.28777}",North West,Sokoto
+2318921,Wukari,NG,"{'lon': 9.78333, 'lat': 7.85}",North East,Taraba
+2318933,Wudil,NG,"{'lon': 8.84505, 'lat': 11.81067}",North West,Kano
+2319078,Wawa,NG,"{'lon': 4.41917, 'lat': 9.90222}",North Central,Niger
+2319080,Wauro Jabbe,NG,"{'lon': 12.41667, 'lat': 9.26667}",North East,Adamawa
+2319123,Wasagu,NG,"{'lon': 5.79536, 'lat': 11.3764}",North West,Kebbi
+2319133,Warri,NG,"{'lon': 5.75, 'lat': 5.51667}",South South,Delta
+2319257,Wamba,NG,"{'lon': 8.6, 'lat': 8.93333}",North Central,Nasarawa
+2319268,Walmayo,NG,"{'lon': 8.5441, 'lat': 7.7315}",,
+2319345,Wagini,NG,"{'lon': 7.19579, 'lat': 12.68781}",North West,Katsina
+2319407,Vom,NG,"{'lon': 8.78333, 'lat': 9.73333}",North Central,Plateau
+2319480,Uyo,NG,"{'lon': 7.92657, 'lat': 5.03333}",South South,Akwa Ibom
+2319642,Uruobo-Okija,NG,"{'lon': 6.84312, 'lat': 5.90016}",South East,Anambra
+2319668,Uromi,NG,"{'lon': 6.33333, 'lat': 6.7}",South South,Edo
+2320417,Umunede,NG,"{'lon': 6.31161, 'lat': 6.26374}",South South,Delta
+2320576,Umuahia,NG,"{'lon': 7.48959, 'lat': 5.52627}",South East,Abia
+2320746,Ukata,NG,"{'lon': 5.82494, 'lat': 10.83122}",North Central,Niger
+2320829,Ughelli,NG,"{'lon': 6.00743, 'lat': 5.48986}",South South,Delta
+2320831,Ugep,NG,"{'lon': 8.0812, 'lat': 5.8086}",South South,Cross River
+2320909,Uga Soja,NG,"{'lon': 8.6137, 'lat': 7.7124}",,
+2320920,Uga,NG,"{'lon': 7.0793, 'lat': 5.93576}",South East,Anambra
+2320966,Udi,NG,"{'lon': 7.4258, 'lat': 6.3144}",South East,Enugu
+2321031,Ubiaja,NG,"{'lon': 6.38687, 'lat': 6.65504}",South South,Edo
+2321057,Uba,NG,"{'lon': 13.22139, 'lat': 10.45306}",North East,Adamawa
+2321429,Tungan Ali,NG,"{'lon': 7.22194, 'lat': 9.00556}",,
+2321926,Toungo,NG,"{'lon': 12.05, 'lat': 8.11667}",North East,Adamawa
+2322021,Tokombere,NG,"{'lon': 13.48581, 'lat': 11.22713}",North East,Borno
+2322263,Tegina,NG,"{'lon': 6.1906, 'lat': 10.0706}",North Central,Niger
+2322495,Tambuwal,NG,"{'lon': 4.64692, 'lat': 12.40386}",North West,Sokoto
+2322529,Talata Mafara,NG,"{'lon': 6.05971, 'lat': 12.57317}",North West,Zamfara
+2322552,Takum,NG,"{'lon': 9.98333, 'lat': 7.26667}",North East,Taraba
+2322592,Takai,NG,"{'lon': 9.11667, 'lat': 11.58333}",North West,Kano
+2322722,Suya,NG,"{'lon': 3.18333, 'lat': 9.46667}",,
+2322794,Suleja,NG,"{'lon': 7.18083, 'lat': 9.17583}",North Central,Niger
+2322907,Sokoto State,NG,"{'lon': 5.25, 'lat': 13.08333}",North West,Sokoto
+2322911,Sokoto,NG,"{'lon': 5.23902, 'lat': 13.06092}",North West,Sokoto
+2322957,Soba,NG,"{'lon': 8.05749, 'lat': 10.98134}",North West,Kaduna
+2323011,Siluko,NG,"{'lon': 5.1609, 'lat': 6.53858}",South South,Edo
+2323146,Shinkafi,NG,"{'lon': 6.51046, 'lat': 13.07534}",North West,Zamfara
+2323344,Shani,NG,"{'lon': 12.06198, 'lat': 10.21617}",North East,Borno
+2323349,Shanga,NG,"{'lon': 4.57878, 'lat': 11.21062}",North West,Kebbi
+2323390,Saki,NG,"{'lon': 3.38333, 'lat': 8.66667}",South West,Oyo
+2323411,Shagamu,NG,"{'lon': 3.64776, 'lat': 6.84323}",South West,Ogun
+2323418,Shaffa,NG,"{'lon': 12.33315, 'lat': 10.50673}",North East,Borno
+2323579,Sauri,NG,"{'lon': 6.78374, 'lat': 11.72655}",North East,Bauchi
+2323675,Sapele,NG,"{'lon': 5.67666, 'lat': 5.89405}",South South,Delta
+2323858,Samamiya,NG,"{'lon': 9.63989, 'lat': 11.34873}",,
+2324024,Sade,NG,"{'lon': 10.6732, 'lat': 11.3595}",North East,Bauchi
+2324281,Runka,NG,"{'lon': 7.30918, 'lat': 12.44788}",North West,Katsina
+2324325,Ruma,NG,"{'lon': 7.23469, 'lat': 12.8626}",North West,Katsina
+2324433,Rivers State,NG,"{'lon': 6.82766, 'lat': 4.74974}",South South,Rivers
+2324439,Riti,NG,"{'lon': 9.61667, 'lat': 7.91667}",North East,Taraba
+2324460,Ringim,NG,"{'lon': 9.16192, 'lat': 12.15482}",North West,Jigawa
+2324504,Rijau,NG,"{'lon': 5.25068, 'lat': 11.10298}",North Central,Niger
+2324575,Rano,NG,"{'lon': 8.57464, 'lat': 11.54912}",North West,Kano
+2324623,Saminaka,NG,"{'lon': 8.68279, 'lat': 10.41403}",North West,Kaduna
+2324706,Rabah,NG,"{'lon': 5.50741, 'lat': 13.12133}",North West,Sokoto
+2324767,Potiskum,NG,"{'lon': 11.0694, 'lat': 11.7091}",North East,Yobe
+2324774,Port Harcourt,NG,"{'lon': 7.0134, 'lat': 4.77742}",South South,Rivers
+2324828,Plateau State,NG,"{'lon': 9.75, 'lat': 9.16667}",North Central,Plateau
+2324857,Pindiga,NG,"{'lon': 10.93333, 'lat': 9.98333}",North East,Gombe
+2324960,Patigi,NG,"{'lon': 5.75, 'lat': 8.73333}",North Central,Kwara
+2324962,Patani,NG,"{'lon': 6.19238, 'lat': 5.22724}",South South,Delta
+2325032,Panyam,NG,"{'lon': 9.21667, 'lat': 9.41667}",North Central,Plateau
+2325060,Pankshin,NG,"{'lon': 9.45, 'lat': 9.33333}",North Central,Plateau
+2325161,Ozubulu,NG,"{'lon': 6.84904, 'lat': 5.95666}",South East,Anambra
+2325190,Oyo State,NG,"{'lon': 4.0, 'lat': 8.0}",South West,Oyo
+2325200,Oyo,NG,"{'lon': 3.93333, 'lat': 7.85}",South West,Oyo
+2325249,Oyan,NG,"{'lon': 4.76667, 'lat': 8.05}",South West,Osun
+2325307,Owode,NG,"{'lon': 3.50511, 'lat': 6.94864}",South West,Ogun
+2325314,Owo,NG,"{'lon': 5.58681, 'lat': 7.1962}",South West,Ondo
+2325330,Owerri,NG,"{'lon': 7.03041, 'lat': 5.48333}",South East,Imo
+2325437,Otukpa,NG,"{'lon': 7.64989, 'lat': 7.08921}",North Central,Benue
+2325458,Otta,NG,"{'lon': 3.73333, 'lat': 6.66667}",South West,Ogun
+2325590,Osogbo,NG,"{'lon': 4.56667, 'lat': 7.76667}",South West,Osun
+2325688,Oron,NG,"{'lon': 8.23434, 'lat': 4.82561}",South South,Akwa Ibom
+2325713,Orodo,NG,"{'lon': 7.03333, 'lat': 5.61667}",South East,Imo
+2325725,Orlu,NG,"{'lon': 7.03495, 'lat': 5.79464}",South East,Imo
+2325733,Orita Eruwa,NG,"{'lon': 3.43333, 'lat': 7.55}",South West,Oyo
+2325803,Orerokpe,NG,"{'lon': 5.88956, 'lat': 5.63506}",South South,Delta
+2325821,Ore,NG,"{'lon': 4.87748, 'lat': 6.74569}",South West,Ondo
+2325902,Opi,NG,"{'lon': 7.4365, 'lat': 6.7814}",South East,Enugu
+2326016,Onitsha,NG,"{'lon': 6.78845, 'lat': 6.14543}",South East,Anambra
+2326168,Ondo State,NG,"{'lon': 5.08333, 'lat': 7.16667}",South West,Ondo
+2326171,Ondo,NG,"{'lon': 4.83333, 'lat': 7.1}",South West,Ondo
+2326188,Omuo-Ekiti,NG,"{'lon': 5.72227, 'lat': 7.75833}",South West,Ekiti
+2326200,Omu-Aran,NG,"{'lon': 5.1, 'lat': 8.13333}",North Central,Kwara
+2326221,Omoku,NG,"{'lon': 6.65321, 'lat': 5.3435}",South South,Rivers
+2326302,Olupona,NG,"{'lon': 4.18333, 'lat': 7.6}",South West,Osun
+2326811,Okuta,NG,"{'lon': 3.18333, 'lat': 9.21667}",North Central,Kwara
+2326899,Okrika,NG,"{'lon': 7.08488, 'lat': 4.74159}",South South,Rivers
+2327124,Oko,NG,"{'lon': 5.59383, 'lat': 6.2995}",South East,Anambra
+2327143,Okigwe,NG,"{'lon': 7.35989, 'lat': 5.83523}",South East,Imo
+2327223,Oke Mesi,NG,"{'lon': 4.91667, 'lat': 7.81667}",South West,Ekiti
+2327236,Okeho,NG,"{'lon': 3.35, 'lat': 8.03333}",South West,Oyo
+2327445,Ohunene,NG,"{'lon': 6.66587, 'lat': 7.46614}",North Central,Kogi
+2327494,Ohafia-Ifigh,NG,"{'lon': 7.81191, 'lat': 5.61455}",South East,Abia
+2327513,Ogwashi-Uku,NG,"{'lon': 6.52429, 'lat': 6.17818}",South South,Delta
+2327521,Oguta,NG,"{'lon': 6.81026, 'lat': 5.7089}",South East,Imo
+2327523,Ogurugu,NG,"{'lon': 6.95053, 'lat': 6.78558}",South East,Enugu
+2327546,Ogun State,NG,"{'lon': 3.58333, 'lat': 7.0}",South West,Ogun
+2327650,Ogoja,NG,"{'lon': 8.79764, 'lat': 6.65471}",South South,Cross River
+2327735,Ogbomoso,NG,"{'lon': 4.26667, 'lat': 8.13333}",South West,Oyo
+2327827,Ogaminana,NG,"{'lon': 6.22476, 'lat': 7.59464}",North Central,Kogi
+2327879,Offa,NG,"{'lon': 4.71667, 'lat': 8.15}",North Central,Kwara
+2328090,Ode,NG,"{'lon': 5.7117, 'lat': 7.7899}",South West,Ekiti
+2328113,Ochobo,NG,"{'lon': 7.9769, 'lat': 7.183}",North Central,Benue
+2328151,Obudu,NG,"{'lon': 9.17157, 'lat': 6.66737}",South South,Cross River
+2328153,Obubra,NG,"{'lon': 8.32904, 'lat': 6.07525}",South South,Cross River
+2328185,Obonoma,NG,"{'lon': 6.79307, 'lat': 4.70844}",South South,Rivers
+2328192,Obolo-Eke (1),NG,"{'lon': 7.63333, 'lat': 6.88333}",South East,Enugu
+2328276,Obiaruku,NG,"{'lon': 6.15257, 'lat': 5.84671}",South South,Delta
+2328617,Numan,NG,"{'lon': 12.03333, 'lat': 9.46667}",North East,Adamawa
+2328684,Nsukka,NG,"{'lon': 7.3927, 'lat': 6.8561}",South East,Enugu
+2328765,Nnewi,NG,"{'lon': 6.91478, 'lat': 6.01986}",South East,Anambra
+2328790,Nkwerre,NG,"{'lon': 7.10627, 'lat': 5.75555}",South East,Imo
+2328811,Nkpor,NG,"{'lon': 6.84458, 'lat': 6.15164}",South East,Anambra
+2328925,Niger State,NG,"{'lon': 6.0, 'lat': 10.0}",North Central,Niger
+2328926,Federal Republic of Nigeria,NG,"{'lon': 8.0, 'lat': 10.0}",,
+2328952,Nguru,NG,"{'lon': 10.4526, 'lat': 12.8791}",North East,Yobe
+2328960,Ngurore,NG,"{'lon': 12.23333, 'lat': 9.28333}",North East,Adamawa
+2329087,Ngala,NG,"{'lon': 14.18052, 'lat': 12.33772}",North East,Borno
+2329114,New Shagunnu,NG,"{'lon': 4.4688, 'lat': 10.33957}",North Central,Niger
+2329451,Nasarawa,NG,"{'lon': 7.72417, 'lat': 8.52944}",North Central,Nasarawa
+2329562,Nafada,NG,"{'lon': 11.3327, 'lat': 11.0956}",North East,Gombe
+2329639,Mutum Biyu,NG,"{'lon': 10.76667, 'lat': 8.63333}",North East,Taraba
+2329664,Musawa,NG,"{'lon': 7.6698, 'lat': 12.12717}",North West,Katsina
+2329821,Mubi,NG,"{'lon': 13.26436, 'lat': 10.26761}",North East,Adamawa
+2329920,Moriki,NG,"{'lon': 6.48754, 'lat': 12.87405}",North West,Zamfara
+2329946,Monguno,NG,"{'lon': 13.60792, 'lat': 12.67863}",North East,Borno
+2329981,Mokwa,NG,"{'lon': 5.05, 'lat': 9.28333}",North Central,Niger
+2330028,Modakeke,NG,"{'lon': 4.26667, 'lat': 7.38333}",South West,Osun
+2330082,Misau,NG,"{'lon': 10.4703, 'lat': 11.3163}",North East,Bauchi
+2330087,Miringa,NG,"{'lon': 12.14626, 'lat': 10.73115}",North East,Borno
+2330100,Minna,NG,"{'lon': 6.55694, 'lat': 9.61389}",North Central,Niger
+2330241,Imeko,NG,"{'lon': 2.85, 'lat': 7.45}",South West,Ogun
+2330543,Mayo-Belwa,NG,"{'lon': 12.05, 'lat': 9.05}",North East,Adamawa
+2330589,Machina,NG,"{'lon': 10.04924, 'lat': 13.13639}",North East,Yobe
+2330664,Mashi,NG,"{'lon': 7.95293, 'lat': 12.97844}",North West,Katsina
+2330717,Maru,NG,"{'lon': 6.40569, 'lat': 12.33417}",North West,Zamfara
+2330719,Marte,NG,"{'lon': 13.8246, 'lat': 12.36113}",North East,Borno
+2330937,Mando,NG,"{'lon': 6.56667, 'lat': 10.71667}",North West,Kaduna
+2331005,Malumfashi,NG,"{'lon': 7.62175, 'lat': 11.78529}",North West,Katsina
+2331037,Mallammaduri,NG,"{'lon': 9.95729, 'lat': 12.565}",North West,Jigawa
+2331140,Makurdi,NG,"{'lon': 8.5121, 'lat': 7.7411}",North Central,Benue
+2331267,Maiyama,NG,"{'lon': 4.36766, 'lat': 12.08411}",North West,Kebbi
+2331303,Maitama,NG,"{'lon': 7.49444, 'lat': 9.10306}",North Central,FCT
+2331447,Maiduguri,NG,"{'lon': 13.16027, 'lat': 11.84644}",North East,Borno
+2331493,Mahuta,NG,"{'lon': 4.98436, 'lat': 11.55254}",North West,Kebbi
+2331528,Magumeri,NG,"{'lon': 12.8274, 'lat': 12.1131}",North East,Borno
+2331686,Madara,NG,"{'lon': 10.4479, 'lat': 11.7798}",North East,Bauchi
+2331694,Madala,NG,"{'lon': 7.21333, 'lat': 9.10444}",North Central,Niger
+2331715,Madagali,NG,"{'lon': 13.63121, 'lat': 10.89018}",North East,Adamawa
+2331939,Lokoja,NG,"{'lon': 6.743, 'lat': 7.80236}",North Central,Kogi
+2332079,Lere,NG,"{'lon': 8.57262, 'lat': 10.38697}",North West,Kaduna
+2332080,Lere,NG,"{'lon': 9.33833, 'lat': 9.70889}",North Central,Plateau
+2332197,Lau,NG,"{'lon': 11.28333, 'lat': 9.21667}",North East,Taraba
+2332249,Lapai,NG,"{'lon': 6.56667, 'lat': 9.05}",North Central,Niger
+2332280,Langtang,NG,"{'lon': 9.78333, 'lat': 9.13333}",North Central,Plateau
+2332337,Lame,NG,"{'lon': 9.23955, 'lat': 10.44154}",North East,Bauchi
+2332357,Lalupon,NG,"{'lon': 4.06667, 'lat': 7.46667}",South West,Oyo
+2332453,Lagos State,NG,"{'lon': 3.75, 'lat': 6.58333}",South West,Lagos
+2332459,Lagos,NG,"{'lon': 3.39583, 'lat': 6.45306}",South West,Lagos
+2332504,Lafiagi,NG,"{'lon': 5.41667, 'lat': 8.86667}",North Central,Kwara
+2332515,Lafia,NG,"{'lon': 8.51667, 'lat': 8.48333}",North Central,Nasarawa
+2332662,Kwolla,NG,"{'lon': 9.28333, 'lat': 8.93333}",North Central,Plateau
+2332733,Kwatarkwashi,NG,"{'lon': 6.82196, 'lat': 12.14082}",North West,Zamfara
+2332785,Kwara State,NG,"{'lon': 5.0, 'lat': 8.5}",North Central,Kwara
+2332865,Kwali,NG,"{'lon': 7.005, 'lat': 8.86722}",North Central,FCT
+2332871,Kwale,NG,"{'lon': 6.43741, 'lat': 5.70632}",South South,Delta
+2333003,Kuyi,NG,"{'lon': 6.45, 'lat': 9.66667}",South West,Osun
+2333064,Kuta,NG,"{'lon': 6.71667, 'lat': 9.86667}",North Central,Niger
+2333096,Kusheriki,NG,"{'lon': 6.44222, 'lat': 10.53283}",North Central,Niger
+2333312,Kura,NG,"{'lon': 8.43033, 'lat': 11.76969}",North West,Kano
+2333451,Kumo,NG,"{'lon': 11.21217, 'lat': 10.04469}",North East,Gombe
+2333490,Kumagunnam,NG,"{'lon': 10.63423, 'lat': 13.15514}",North East,Borno
+2333563,Kukawa,NG,"{'lon': 13.56058, 'lat': 12.92342}",North East,Borno
+2333606,Kujama,NG,"{'lon': 7.63678, 'lat': 10.45418}",North West,Kaduna
+2333884,Koton-Karfe,NG,"{'lon': 6.8, 'lat': 8.1}",North Central,Kogi
+2334008,Kontagora,NG,"{'lon': 5.46949, 'lat': 10.39989}",North Central,Niger
+2334018,Konkwesso,NG,"{'lon': 4.09835, 'lat': 10.84686}",,
+2334044,Konduga,NG,"{'lon': 13.42133, 'lat': 11.65583}",North East,Borno
+2334327,Kisi,NG,"{'lon': 3.85, 'lat': 9.08333}",South West,Oyo
+2334502,Kibiya,NG,"{'lon': 8.66227, 'lat': 11.52629}",North West,Kano
+2334528,Ketu Adieowe,NG,"{'lon': 3.06667, 'lat': 6.6}",South West,Lagos
+2334592,Kende,NG,"{'lon': 4.2603, 'lat': 11.51966}",North West,Kebbi
+2334649,Kafin Hausa,NG,"{'lon': 9.90798, 'lat': 12.23753}",North West,Jigawa
+2334652,Keffi,NG,"{'lon': 7.87361, 'lat': 8.84861}",North Central,Nasarawa
+2334674,Kazaure,NG,"{'lon': 8.41615, 'lat': 12.65131}",North West,Jigawa
+2334756,Kaura Namoda,NG,"{'lon': 6.57791, 'lat': 12.58979}",North West,Zamfara
+2334797,Katsina State,NG,"{'lon': 7.5, 'lat': 12.25}",North West,Katsina
+2334801,Katsina-Ala,NG,"{'lon': 9.28333, 'lat': 7.16667}",North Central,Benue
+2334802,Katsina,NG,"{'lon': 7.60063, 'lat': 12.98943}",North West,Katsina
+2334861,Katagum,NG,"{'lon': 10.3527, 'lat': 12.2867}",North East,Bauchi
+2335015,Kari,NG,"{'lon': 10.561, 'lat': 11.2471}",North East,Bauchi
+2335196,Kano State,NG,"{'lon': 8.5, 'lat': 11.5}",North West,Kano
+2335204,Kano,NG,"{'lon': 8.51672, 'lat': 12.00012}",North West,Kano
+2335219,Kankara,NG,"{'lon': 7.41267, 'lat': 11.93016}",North West,Katsina
+2335333,Kamba,NG,"{'lon': 3.65761, 'lat': 11.84864}",North West,Kebbi
+2335369,Kaltungo,NG,"{'lon': 11.30889, 'lat': 9.81417}",North East,Gombe
+2335500,Kajuru,NG,"{'lon': 7.68924, 'lat': 10.31921}",North West,Kaduna
+2335502,Kajul,NG,"{'lon': 7.9981, 'lat': 10.03176}",,
+2335568,Kangiwa,NG,"{'lon': 3.81867, 'lat': 12.55208}",North West,Kebbi
+2335596,Kaiama,NG,"{'lon': 3.94806, 'lat': 9.6225}",North Central,Kwara
+2335614,Kagoro,NG,"{'lon': 8.38333, 'lat': 9.6}",North West,Kaduna
+2335709,Kafarati,NG,"{'lon': 11.09567, 'lat': 10.38304}",,
+2335713,Kafanchan,NG,"{'lon': 8.3, 'lat': 9.58333}",North West,Kaduna
+2335722,Kaduna State,NG,"{'lon': 7.75, 'lat': 10.33333}",North West,Kaduna
+2335727,Kaduna,NG,"{'lon': 7.43828, 'lat': 10.52224}",North West,Kaduna
+2335798,Kachia,NG,"{'lon': 7.95, 'lat': 9.86667}",North West,Kaduna
+2335843,Kabba,NG,"{'lon': 6.0731, 'lat': 7.82873}",North Central,Kogi
+2335953,Jos,NG,"{'lon': 8.9, 'lat': 9.91667}",North Central,Plateau
+2336056,Jimeta,NG,"{'lon': 12.46667, 'lat': 9.28333}",North East,Adamawa
+2336092,Jikamshi,NG,"{'lon': 7.77424, 'lat': 12.17328}",North West,Katsina
+2336137,Jibia,NG,"{'lon': 7.2225, 'lat': 13.09778}",North West,Katsina
+2336237,Jega,NG,"{'lon': 4.37917, 'lat': 12.2175}",North West,Kebbi
+2336251,Jebba,NG,"{'lon': 4.83333, 'lat': 9.13333}",North Central,Kwara
+2336589,Jalingo,NG,"{'lon': 11.36667, 'lat': 8.88333}",North East,Taraba
+2336624,Lajere,NG,"{'lon': 11.44426, 'lat': 11.97969}",,
+2336648,Jagun Elesin,NG,"{'lon': 3.98333, 'lat': 7.35472}",,
+2336905,Iwo,NG,"{'lon': 4.18333, 'lat': 7.63333}",South West,Osun
+2336985,Itu,NG,"{'lon': 7.98475, 'lat': 5.2004}",South South,Akwa Ibom
+2337148,Isieke,NG,"{'lon': 8.03524, 'lat': 6.37831}",South East,Abia
+2337181,Iseyin,NG,"{'lon': 3.6, 'lat': 7.96667}",South West,Oyo
+2337207,Ise-Ekiti,NG,"{'lon': 5.4281, 'lat': 7.4632}",South West,Ekiti
+2337227,Isara,NG,"{'lon': 3.68185, 'lat': 6.99281}",South West,Ogun
+2337235,Isanlu-Itedoijowa,NG,"{'lon': 5.83333, 'lat': 8.26667}",North Central,Kogi
+2337352,Ipoti,NG,"{'lon': 5.07692, 'lat': 7.87377}",South West,Ekiti
+2337379,Iperu,NG,"{'lon': 3.66557, 'lat': 6.91002}",South West,Ogun
+2337490,Inisa,NG,"{'lon': 4.33333, 'lat': 7.85}",South West,Osun
+2337542,Imo State,NG,"{'lon': 7.16667, 'lat': 5.5}",South East,Imo
+2337639,Ilorin,NG,"{'lon': 4.55, 'lat': 8.5}",North Central,Kwara
+2337659,Ilobu,NG,"{'lon': 4.48333, 'lat': 7.83333}",South West,Osun
+2337666,Illushi,NG,"{'lon': 6.63076, 'lat': 6.6667}",South South,Delta
+2337680,Illela,NG,"{'lon': 5.29752, 'lat': 13.72918}",North West,Sokoto
+2337704,Ilesa,NG,"{'lon': 4.73333, 'lat': 7.61667}",South West,Osun
+2337759,Ilaro,NG,"{'lon': 3.0205, 'lat': 6.88653}",South West,Ogun
+2337762,Ilare,NG,"{'lon': 5.11333, 'lat': 7.35067}",South West,Osun
+2337765,Ila Orangun,NG,"{'lon': 4.9, 'lat': 8.01667}",South West,Osun
+2338106,Ikot Ekpene,NG,"{'lon': 7.71082, 'lat': 5.17938}",South South,Akwa Ibom
+2338242,Ikom,NG,"{'lon': 8.70632, 'lat': 5.96669}",South South,Cross River
+2338269,Ikirun,NG,"{'lon': 4.66667, 'lat': 7.91667}",South West,Osun
+2338273,Ikire,NG,"{'lon': 4.18333, 'lat': 7.35}",South West,Osun
+2338287,Ikere-Ekiti,NG,"{'lon': 5.23225, 'lat': 7.49133}",South West,Ekiti
+2338305,Ikem,NG,"{'lon': 7.71685, 'lat': 6.77903}",South East,Enugu
+2338313,Ikeja,NG,"{'lon': 3.33748, 'lat': 6.59422}",South West,Lagos
+2338334,Ikang,NG,"{'lon': 8.5316, 'lat': 4.78978}",South South,Cross River
+2338385,Ijero-Ekiti,NG,"{'lon': 5.0742, 'lat': 7.8139}",South West,Ekiti
+2338400,Ijebu-Ode,NG,"{'lon': 3.91588, 'lat': 6.81609}",South West,Ogun
+2338401,Ijebu-Jesa,NG,"{'lon': 4.81667, 'lat': 7.68333}",South West,Osun
+2338403,Ijebu-Igbo,NG,"{'lon': 4.00329, 'lat': 6.9798}",South West,Ogun
+2338404,Ijebu-Ife,NG,"{'lon': 4.03386, 'lat': 6.77837}",South West,Ogun
+2338469,Iho,NG,"{'lon': 7.1, 'lat': 5.56667}",South East,Imo
+2338497,Ihiala,NG,"{'lon': 6.86026, 'lat': 5.85377}",South East,Anambra
+2338630,Igede-Ekiti,NG,"{'lon': 5.13205, 'lat': 7.66676}",South West,Ekiti
+2338640,Igbo-Ukwu,NG,"{'lon': 7.02654, 'lat': 6.01669}",South East,Anambra
+2338660,Igbor,NG,"{'lon': 8.6098, 'lat': 7.4527}",North Central,Benue
+2338669,Igbo-Ora,NG,"{'lon': 3.28333, 'lat': 7.43333}",South West,Oyo
+2338711,Igboho,NG,"{'lon': 3.75, 'lat': 8.83333}",South West,Oyo
+2338772,Igbeti,NG,"{'lon': 4.13333, 'lat': 8.75}",South West,Oyo
+2338810,Igbara-Odo,NG,"{'lon': 5.06258, 'lat': 7.50251}",South West,Ekiti
+2338840,Igarra,NG,"{'lon': 6.0878, 'lat': 7.2827}",South South,Edo
+2338863,Igabi,NG,"{'lon': 7.77493, 'lat': 10.78887}",North West,Kaduna
+2338873,Ifon,NG,"{'lon': 5.77603, 'lat': 6.92412}",South West,Ondo
+2338876,Ifo,NG,"{'lon': 3.19575, 'lat': 6.81437}",South West,Ogun
+2338883,Ifira,NG,"{'lon': 7.29455, 'lat': 10.70113}",South West,Ondo
+2338900,Ile-Ife,NG,"{'lon': 4.56667, 'lat': 7.46667}",South West,Osun
+2338908,Ifaki,NG,"{'lon': 5.24852, 'lat': 7.78942}",South West,Ekiti
+2339065,Idiroko,NG,"{'lon': 2.73333, 'lat': 6.63333}",South West,Ogun
+2339150,Idanre,NG,"{'lon': 5.1159, 'lat': 7.1127}",South West,Ondo
+2339156,Idah,NG,"{'lon': 6.73415, 'lat': 7.10651}",North Central,Kogi
+2339170,Icheu,NG,"{'lon': 6.7718, 'lat': 7.7067}",,
+2339287,Ibi,NG,"{'lon': 9.75, 'lat': 8.18333}",North East,Taraba
+2339293,Ibeto,NG,"{'lon': 5.14502, 'lat': 10.48536}",North West,Kebbi
+2339354,Ibadan,NG,"{'lon': 3.89639, 'lat': 7.38778}",South West,Oyo
+2339403,Hunkuyi,NG,"{'lon': 7.65118, 'lat': 11.26676}",North West,Kaduna
+2339468,Holma,NG,"{'lon': 13.05667, 'lat': 9.90083}",North East,Adamawa
+2339483,Hinna,NG,"{'lon': 11.49905, 'lat': 10.30426}",North East,Gombe
+2339530,Heipang,NG,"{'lon': 8.88333, 'lat': 9.63333}",North Central,Plateau
+2339631,Hadejia,NG,"{'lon': 10.0444, 'lat': 12.4498}",North West,Jigawa
+2339665,Gwoza,NG,"{'lon': 13.71298, 'lat': 11.10359}",North East,Borno
+2339706,Gwio Kura,NG,"{'lon': 11.0682, 'lat': 12.6753}",North East,Borno
+2339753,Gwasero,NG,"{'lon': 3.5, 'lat': 9.48333}",,
+2339756,Gwarzo,NG,"{'lon': 7.9346, 'lat': 11.91521}",North West,Kano
+2339786,Gwaram,NG,"{'lon': 9.88583, 'lat': 11.27639}",North West,Jigawa
+2339789,Gwaram,NG,"{'lon': 10.28572, 'lat': 10.23295}",North East,Bauchi
+2339811,Gwandu,NG,"{'lon': 4.64227, 'lat': 12.49382}",North West,Kebbi
+2339892,Gwadabawa,NG,"{'lon': 5.23664, 'lat': 13.35612}",North West,Sokoto
+2339937,Gusau,NG,"{'lon': 6.66135, 'lat': 12.16278}",North West,Zamfara
+2340086,Gummi,NG,"{'lon': 5.10809, 'lat': 12.14358}",North West,Zamfara
+2340091,Gumel,NG,"{'lon': 9.39119, 'lat': 12.62791}",North West,Jigawa
+2340132,Gulma,NG,"{'lon': 4.35545, 'lat': 12.64231}",North West,Kebbi
+2340170,Gujba,NG,"{'lon': 11.9367, 'lat': 11.5032}",North East,Yobe
+2340323,Goronyo,NG,"{'lon': 5.67632, 'lat': 13.44232}",North West,Sokoto
+2340350,Gorgoram,NG,"{'lon': 10.7039, 'lat': 12.6398}",North East,Yobe
+2340389,Gora,NG,"{'lon': 7.6653, 'lat': 11.91294}",North West,Katsina
+2340404,Goniri,NG,"{'lon': 12.31444, 'lat': 11.48333}",North East,Yobe
+2340446,Gombi,NG,"{'lon': 12.7399, 'lat': 10.16138}",North East,Adamawa
+2340451,Gombe,NG,"{'lon': 11.16729, 'lat': 10.28969}",North East,Gombe
+2340788,Gidan Sarkin Gardi,NG,"{'lon': 6.405, 'lat': 12.07433}",,
+2341275,Gembu,NG,"{'lon': 11.26667, 'lat': 6.7}",North East,Taraba
+2341294,Geidam,NG,"{'lon': 11.9304, 'lat': 12.897}",North East,Yobe
+2341355,Gbongan,NG,"{'lon': 4.35, 'lat': 7.46667}",South West,Osun
+2341580,Gaya,NG,"{'lon': 8.99714, 'lat': 11.86136}",North West,Kano
+2341641,Gassol,NG,"{'lon': 10.46667, 'lat': 8.53333}",North East,Taraba
+2341656,Gashua,NG,"{'lon': 11.0482, 'lat': 12.871}",North East,Yobe
+2341758,Garko,NG,"{'lon': 11.16458, 'lat': 10.17506}",North West,Kano
+2341955,Ganye,NG,"{'lon': 12.06667, 'lat': 8.43333}",North East,Adamawa
+2342125,Gandi,NG,"{'lon': 5.74337, 'lat': 12.96358}",North West,Sokoto
+2342192,Gamboru,NG,"{'lon': 14.21731, 'lat': 12.37066}",North East,Borno
+2342199,Gamawa,NG,"{'lon': 10.5396, 'lat': 12.1343}",North East,Bauchi
+2342291,Gakem,NG,"{'lon': 8.98813, 'lat': 6.76578}",South South,Cross River
+2342340,Gagarawa,NG,"{'lon': 9.5277, 'lat': 12.40741}",North West,Jigawa
+2342439,Gabarin,NG,"{'lon': 10.4441, 'lat': 11.1093}",North West,Jigawa
+2342490,Funtua,NG,"{'lon': 7.30813, 'lat': 11.52325}",North West,Katsina
+2342616,Fili,NG,"{'lon': 4.5, 'lat': 8.43333}",North West,Kaduna
+2342628,Fiditi,NG,"{'lon': 3.91722, 'lat': 7.71361}",South West,Oyo
+2342883,Ezza-Ohu,NG,"{'lon': 8.0862, 'lat': 6.4373}",South East,Ebonyi
+2342955,Eyamba Town,NG,"{'lon': 7.16747, 'lat': 4.44253}",South South,Cross River
+2343057,Etinan,NG,"{'lon': 7.85252, 'lat': 4.84262}",South South,Akwa Ibom
+2343073,Ete,NG,"{'lon': 7.45, 'lat': 7.05}",South East,Enugu
+2343093,Esuk Oron,NG,"{'lon': 8.25341, 'lat': 4.80293}",South South,Akwa Ibom
+2343252,Epe,NG,"{'lon': 3.98336, 'lat': 6.58412}",South West,Lagos
+2343270,Enugu-Ukwu,NG,"{'lon': 7.01156, 'lat': 6.17851}",South East,Anambra
+2343273,Enugu-Ezike,NG,"{'lon': 7.457, 'lat': 6.9825}",South East,Enugu
+2343279,Enugu,NG,"{'lon': 7.4943, 'lat': 6.4402}",South East,Enugu
+2343299,Emure-Ekiti,NG,"{'lon': 5.45932, 'lat': 7.43614}",South West,Ekiti
+2343356,Emene,NG,"{'lon': 7.5851, 'lat': 6.4762}",South East,Enugu
+2343379,Emagiti,NG,"{'lon': 6.03333, 'lat': 9.06667}",,
+2343508,Elelem,NG,"{'lon': 7.14768, 'lat': 5.26566}",South South,Rivers
+2343512,Elele,NG,"{'lon': 6.81411, 'lat': 5.1009}",South South,Rivers
+2343641,Ekpoma,NG,"{'lon': 6.139, 'lat': 6.74206}",South South,Edo
+2343720,Eket,NG,"{'lon': 7.92092, 'lat': 4.64122}",South South,Akwa Ibom
+2343776,Ejirin,NG,"{'lon': 3.90019, 'lat': 6.61423}",South West,Lagos
+2343784,Ejigbo,NG,"{'lon': 4.31667, 'lat': 7.9}",South West,Osun
+2343822,Eha Amufu,NG,"{'lon': 7.75961, 'lat': 6.65915}",South East,Enugu
+2343943,Egbe,NG,"{'lon': 5.51667, 'lat': 8.21667}",North Central,Kogi
+2343983,Efon-Alaaye,NG,"{'lon': 4.91667, 'lat': 7.65}",South West,Ekiti
+2343985,Effium,NG,"{'lon': 8.05925, 'lat': 6.62917}",South East,Ebonyi
+2344082,Ebute Ikorodu,NG,"{'lon': 3.48818, 'lat': 6.60086}",South West,Lagos
+2344217,Dutsin-Ma,NG,"{'lon': 7.49805, 'lat': 12.45167}",North West,Katsina
+2344229,Dutsen Wai,NG,"{'lon': 8.199, 'lat': 10.85009}",North West,Kaduna
+2344245,Dutse,NG,"{'lon': 9.33921, 'lat': 11.7594}",North West,Jigawa
+2344415,Duku,NG,"{'lon': 4.90727, 'lat': 11.2361}",North East,Gombe
+2344418,Dukku,NG,"{'lon': 10.77167, 'lat': 10.82306}",North East,Gombe
+2344600,Doma,NG,"{'lon': 8.35, 'lat': 8.38333}",North Central,Nasarawa
+2344760,Disina,NG,"{'lon': 9.91903, 'lat': 11.48135}",North East,Bauchi
+2344804,Dindima,NG,"{'lon': 10.15132, 'lat': 10.22629}",North East,Bauchi
+2344838,Dillala,NG,"{'lon': 11.5703, 'lat': 13.108}",,
+2344854,Dikwa,NG,"{'lon': 13.91646, 'lat': 12.02396}",North East,Borno
+2344941,Dengi,NG,"{'lon': 9.95, 'lat': 9.36667}",North Central,Plateau
+2344981,Dekina,NG,"{'lon': 7.02218, 'lat': 7.69475}",North Central,Kogi
+2345029,Deba,NG,"{'lon': 11.38586, 'lat': 10.20864}",North East,Gombe
+2345094,Daura,NG,"{'lon': 8.31631, 'lat': 13.03594}",North West,Katsina
+2345096,Daura,NG,"{'lon': 11.4085, 'lat': 11.5538}",North East,Bauchi
+2345152,Darazo,NG,"{'lon': 10.41179, 'lat': 10.99375}",North East,Bauchi
+2345172,Dapchi,NG,"{'lon': 11.4944, 'lat': 12.4904}",North East,Yobe
+2345213,Dan Sadau,NG,"{'lon': 6.4952, 'lat': 11.29621}",North West,Zamfara
+2345282,Dankama,NG,"{'lon': 7.79492, 'lat': 13.29782}",North West,Katsina
+2345283,Dankalwa,NG,"{'lon': 12.1867, 'lat': 11.7443}",North West,Zamfara
+2345306,Danja,NG,"{'lon': 7.56249, 'lat': 11.37643}",North West,Katsina
+2345336,Dan Gora,NG,"{'lon': 8.15224, 'lat': 11.53485}",North West,Katsina
+2345349,Dange,NG,"{'lon': 5.34705, 'lat': 12.85128}",North West,Sokoto
+2345498,Damboa,NG,"{'lon': 12.75758, 'lat': 11.15604}",North East,Borno
+2345505,Dambatta,NG,"{'lon': 8.51541, 'lat': 12.43303}",North West,Kano
+2345521,Damaturu,NG,"{'lon': 11.9608, 'lat': 11.747}",North East,Yobe
+2345526,Damasak,NG,"{'lon': 12.4952, 'lat': 13.09771}",North East,Borno
+2345643,Dakingari,NG,"{'lon': 4.06046, 'lat': 11.64511}",North West,Kebbi
+2345785,Dadiya,NG,"{'lon': 11.43333, 'lat': 9.61667}",North East,Gombe
+2345872,Dabai,NG,"{'lon': 5.20625, 'lat': 11.47652}",North West,Kebbi
+2345891,Cross River State,NG,"{'lon': 8.5, 'lat': 5.75}",South South,Cross River
+2346199,Tsafe,NG,"{'lon': 6.92232, 'lat': 11.95527}",North West,Zamfara
+2346229,Calabar,NG,"{'lon': 8.322, 'lat': 4.9517}",South South,Cross River
+2346317,Burutu,NG,"{'lon': 5.50758, 'lat': 5.35091}",South South,Delta
+2346322,Burumburum,NG,"{'lon': 8.72341, 'lat': 11.39106}",North West,Kano
+2346396,Bunza,NG,"{'lon': 4.02111, 'lat': 12.08444}",North West,Kebbi
+2346399,Bununu,NG,"{'lon': 9.66278, 'lat': 9.86806}",North East,Bauchi
+2346401,Dass,NG,"{'lon': 9.51667, 'lat': 10.0}",North East,Bauchi
+2346561,Bukuru,NG,"{'lon': 8.86667, 'lat': 9.8}",North Central,Plateau
+2346615,Buguma,NG,"{'lon': 6.86345, 'lat': 4.73407}",South South,Rivers
+2346632,Buga,NG,"{'lon': 7.34139, 'lat': 8.49056}",,
+2346734,Twon-Brass,NG,"{'lon': 6.24176, 'lat': 4.31506}",South South,Bayelsa
+2346788,Bornu Yassu,NG,"{'lon': 12.5552, 'lat': 12.2774}",North East,Borno
+2346794,Borno State,NG,"{'lon': 13.0, 'lat': 11.5}",North East,Borno
+2346800,Bori,NG,"{'lon': 7.36201, 'lat': 4.67366}",South South,Rivers
+2346805,Ugbokpo,NG,"{'lon': 7.8664, 'lat': 7.6565}",North Central,Benue
+2346812,Bonny,NG,"{'lon': 7.16808, 'lat': 4.4522}",South South,Rivers
+2346843,Bomadi,NG,"{'lon': 5.92516, 'lat': 5.15931}",South South,Delta
+2346853,Bolori,NG,"{'lon': 13.08901, 'lat': 11.88259}",North East,Borno
+2346887,Bokkos,NG,"{'lon': 9.0, 'lat': 9.3}",North Central,Plateau
+2346893,Bokani,NG,"{'lon': 5.2, 'lat': 9.43333}",North Central,Niger
+2346896,Boju,NG,"{'lon': 7.91119, 'lat': 7.37834}",,
+2346906,Boi,NG,"{'lon': 9.49528, 'lat': 9.56833}",North East,Bauchi
+2346951,Bode Saadu,NG,"{'lon': 4.78333, 'lat': 8.93333}",North Central,Kwara
+2346995,Biu,NG,"{'lon': 12.19458, 'lat': 10.61285}",North East,Borno
+2347041,Birniwa,NG,"{'lon': 10.2348, 'lat': 12.7903}",North West,Jigawa
+2347057,Birnin Kudu,NG,"{'lon': 9.4984, 'lat': 11.44588}",North West,Jigawa
+2347059,Birnin Kebbi,NG,"{'lon': 4.1975, 'lat': 12.45389}",North West,Kebbi
+2347061,Sofo-Birnin-Gwari,NG,"{'lon': 6.78036, 'lat': 11.01537}",North West,Kaduna
+2347078,Birim,NG,"{'lon': 9.997027, 'lat': 10.062094}",North Central,Plateau
+2347109,Bin Yauri,NG,"{'lon': 4.81135, 'lat': 10.7823}",North West,Kebbi
+2347116,Binji,NG,"{'lon': 4.90955, 'lat': 13.22277}",North West,Sokoto
+2347155,Billiri,NG,"{'lon': 11.22528, 'lat': 9.86472}",North East,Gombe
+2347209,Bida,NG,"{'lon': 6.01667, 'lat': 9.08333}",North Central,Niger
+2347266,Benue State,NG,"{'lon': 8.75, 'lat': 7.33333}",North Central,Benue
+2347279,Benisheikh,NG,"{'lon': 12.4909, 'lat': 11.8072}",North East,Borno
+2347283,Benin City,NG,"{'lon': 5.62749, 'lat': 6.33504}",South South,Edo
+2347303,Bende,NG,"{'lon': 7.63676, 'lat': 5.55718}",South East,Abia
+2347304,Bena,NG,"{'lon': 5.93472, 'lat': 11.28444}",North West,Kebbi
+2347330,Beli,NG,"{'lon': 10.97187, 'lat': 7.85868}",North East,Taraba
+2347383,Bebeji,NG,"{'lon': 8.26217, 'lat': 11.66726}",North West,Kano
+2347468,Bauchi State,NG,"{'lon': 10.0, 'lat': 10.5}",North East,Bauchi
+2347470,Bauchi,NG,"{'lon': 9.84327, 'lat': 10.31344}",North East,Bauchi
+2347483,Batsari,NG,"{'lon': 7.24472, 'lat': 12.75147}",North West,Katsina
+2347592,Baro,NG,"{'lon': 6.41667, 'lat': 8.6}",North Central,Niger
+2347758,Bara,NG,"{'lon': 10.72884, 'lat': 10.37444}",North East,Bauchi
+2347954,Bama,NG,"{'lon': 13.68558, 'lat': 11.5221}",North East,Borno
+2348118,Bakori,NG,"{'lon': 7.42425, 'lat': 11.55445}",North West,Katsina
+2348228,Baissa,NG,"{'lon': 10.63333, 'lat': 7.23333}",North East,Taraba
+2348259,Bagudo,NG,"{'lon': 4.22958, 'lat': 11.40329}",North West,Kebbi
+2348298,Bugana,NG,"{'lon': 7.58361, 'lat': 7.99917}",,
+2348365,Badeggi,NG,"{'lon': 6.15, 'lat': 9.05}",North Central,Niger
+2348389,Badakoshi,NG,"{'lon': 10.01186, 'lat': 10.54648}",,
+2348395,Badagry,NG,"{'lon': 2.88333, 'lat': 6.41667}",South West,Lagos
+2348419,Babura,NG,"{'lon': 9.01583, 'lat': 12.77305}",North West,Jigawa
+2348507,Babana,NG,"{'lon': 3.81495, 'lat': 10.42949}",North Central,Kwara
+2348595,Azare,NG,"{'lon': 10.1948, 'lat': 11.6765}",North East,Bauchi
+2348773,Awka,NG,"{'lon': 7.07411, 'lat': 6.21009}",South East,Anambra
+2348783,Awgu,NG,"{'lon': 7.4786, 'lat': 6.0742}",South East,Enugu
+2348874,Auna,NG,"{'lon': 4.72318, 'lat': 10.18805}",North Central,Niger
+2348892,Auchi,NG,"{'lon': 6.26667, 'lat': 7.06667}",South South,Edo
+2349276,Asaba,NG,"{'lon': 6.73384, 'lat': 6.20064}",South South,Delta
+2349360,Arochukwu,NG,"{'lon': 7.91404, 'lat': 5.38979}",South East,Abia
+2349431,Argungu,NG,"{'lon': 4.52687, 'lat': 12.74334}",North West,Kebbi
+2349529,Aramoko-Ekiti,NG,"{'lon': 5.04474, 'lat': 7.70927}",South West,Ekiti
+2349558,Apomu,NG,"{'lon': 4.18333, 'lat': 7.33333}",South West,Osun
+2349788,Ankpa,NG,"{'lon': 7.6253, 'lat': 7.37058}",North Central,Kogi
+2349797,Anka,NG,"{'lon': 5.92427, 'lat': 12.11381}",North West,Zamfara
+2349951,Anchau,NG,"{'lon': 8.39155, 'lat': 10.95967}",North West,Kaduna
+2349961,Anambra State,NG,"{'lon': 7.0, 'lat': 6.33333}",South East,Anambra
+2350027,Amper,NG,"{'lon': 9.7, 'lat': 9.35}",North Central,Plateau
+2350172,Amassoma,NG,"{'lon': 6.10972, 'lat': 4.96917}",South South,Bayelsa
+2350249,Amaigbo,NG,"{'lon': 7.83829, 'lat': 5.78917}",South East,Imo
+2350259,Amagunze,NG,"{'lon': 7.6539, 'lat': 6.3267}",South East,Enugu
+2350436,Aliade,NG,"{'lon': 8.487, 'lat': 7.2964}",North Central,Benue
+2350592,Alapa,NG,"{'lon': 4.38333, 'lat': 8.61667}",North Central,Kwara
+2350806,Akwanga,NG,"{'lon': 8.38333, 'lat': 8.91667}",North Central,Nasarawa
+2350813,Akwa Ibom State,NG,"{'lon': 7.83333, 'lat': 5.0}",South South,Akwa Ibom
+2350841,Akure,NG,"{'lon': 5.19312, 'lat': 7.25256}",South West,Ondo
+2350886,Aku,NG,"{'lon': 7.3167, 'lat': 6.7081}",South East,Enugu
+2351027,Akko,NG,"{'lon': 10.9732, 'lat': 10.28899}",North East,Gombe
+2351156,Ake-Eze,NG,"{'lon': 7.67615, 'lat': 5.91677}",South East,Enugu
+2351209,Akankpa,NG,"{'lon': 8.1898, 'lat': 5.1264}",South South,Cross River
+2351358,Ajibo,NG,"{'lon': 4.28333, 'lat': 7.46667}",South East,Enugu
+2351461,Ajasse Ipo,NG,"{'lon': 4.81667, 'lat': 8.23333}",North Central,Kwara
+2351470,Ajaokuta,NG,"{'lon': 6.65497, 'lat': 7.56229}",North Central,Kogi
+2351657,Ahoada,NG,"{'lon': 6.65353, 'lat': 5.07395}",South South,Rivers
+2351740,Agulu,NG,"{'lon': 7.0724, 'lat': 6.11}",South East,Anambra
+2351850,Ago-Are,NG,"{'lon': 3.41667, 'lat': 8.5}",South West,Oyo
+2351927,Agenebode,NG,"{'lon': 6.6966, 'lat': 7.106}",South South,Edo
+2351979,Agbor,NG,"{'lon': 6.19337, 'lat': 6.25183}",South South,Delta
+2352110,Agbabu,NG,"{'lon': 4.8343, 'lat': 6.58862}",South West,Ondo
+2352175,Agaie,NG,"{'lon': 6.31667, 'lat': 9.01667}",North Central,Niger
+2352250,Afikpo,NG,"{'lon': 7.93735, 'lat': 5.89312}",South East,Ebonyi
+2352352,Adoru,NG,"{'lon': 7.16268, 'lat': 6.97661}",North Central,Kogi
+2352356,Ado-Odo,NG,"{'lon': 2.93333, 'lat': 6.6}",South West,Ogun
+2352379,Ado-Ekiti,NG,"{'lon': 5.2215, 'lat': 7.621}",South West,Ekiti
+2352589,Adani,NG,"{'lon': 7.01117, 'lat': 6.73971}",South East,Enugu
+2352776,Federal Capital Territory,NG,"{'lon': 7.16667, 'lat': 8.83333}",North Central,FCT
+2352778,Abuja,NG,"{'lon': 7.48976, 'lat': 9.05735}",North Central,FCT
+2352804,Abraka,NG,"{'lon': 6.10473, 'lat': 5.79023}",South South,Delta
+2352857,Abocho,NG,"{'lon': 6.9863, 'lat': 7.5677}",North Central,Kogi
+2352947,Abeokuta,NG,"{'lon': 3.35, 'lat': 7.15}",South West,Ogun
+2353099,Abakaliki,NG,"{'lon': 8.11691, 'lat': 6.31625}",South East,Ebonyi
+2353100,Abak,NG,"{'lon': 7.79171, 'lat': 4.9797}",South South,Akwa Ibom
+2353151,Aba,NG,"{'lon': 7.36667, 'lat': 5.10658}",South East,Abia
+2565340,Abia State,NG,"{'lon': 7.5, 'lat': 5.41667}",South East,Abia
+2565341,Delta State,NG,"{'lon': 6.0, 'lat': 5.5}",South South,Delta
+2565342,Adamawa State,NG,"{'lon': 12.5, 'lat': 9.33333}",North East,Adamawa
+2565343,Edo,NG,"{'lon': 6.0, 'lat': 6.5}",South South,Edo
+2565344,Enugu State,NG,"{'lon': 7.5, 'lat': 6.5}",South East,Enugu
+2565345,Jigawa State,NG,"{'lon': 9.75, 'lat': 12.0}",North West,Jigawa
+2566677,Shogunle,NG,"{'lon': 3.33444, 'lat': 6.57806}",South West,Lagos
+2591074,Imogwu,NG,"{'lon': 6.94338, 'lat': 4.98174}",,
+2591159,Degema Hulk,NG,"{'lon': 6.752, 'lat': 4.76254}",South South,Rivers
+2591746,Orogbum,NG,"{'lon': 7.01174, 'lat': 4.79071}",South South,Rivers
+2592493,Takurza,NG,"{'lon': 8.53179, 'lat': 12.06425}",,
+2595344,Bayelsa State,NG,"{'lon': 6.08333, 'lat': 4.75}",South South,Bayelsa
+2595345,Ebonyi State,NG,"{'lon': 8.08333, 'lat': 6.25}",South East,Ebonyi
+2595346,Ekiti State,NG,"{'lon': 5.25, 'lat': 7.66667}",South West,Ekiti
+2595347,Gombe State,NG,"{'lon': 11.16667, 'lat': 10.25}",North East,Gombe
+2595348,Nasarawa State,NG,"{'lon': 8.25, 'lat': 8.5}",North Central,Nasarawa
+2595349,Zamfara State,NG,"{'lon': 6.25, 'lat': 12.16667}",North West,Zamfara
+2597363,Kebbi State,NG,"{'lon': 4.0, 'lat': 11.5}",North West,Kebbi
+2597364,Kogi State,NG,"{'lon': 6.75, 'lat': 7.75}",North Central,Kogi
+2597365,Osun State,NG,"{'lon': 4.5, 'lat': 7.5}",South West,Osun
+2597366,Taraba State,NG,"{'lon': 10.5, 'lat': 8.0}",North East,Taraba
+2597367,Yobe State,NG,"{'lon': 11.5, 'lat': 12.0}",North East,Yobe
+6832960,Alodifi,NG,"{'lon': 5.2956, 'lat': 7.2452}",,
+6915258,Ishie Town,NG,"{'lon': 8.3372, 'lat': 4.9936}",South South,Cross River
+7019842,Hanwa,NG,"{'lon': 7.70193, 'lat': 11.11861}",North West,Kaduna
+7021662,Sire,NG,"{'lon': 5.20428, 'lat': 12.9299}",,
+7074978,Afaha Oku,NG,"{'lon': 7.9217, 'lat': 5.04827}",South South,Akwa Ibom

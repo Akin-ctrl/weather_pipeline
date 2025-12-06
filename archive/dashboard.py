@@ -334,7 +334,7 @@ def load_local_city_list(csv_path: str = "nigerian_cities.csv") -> pd.DataFrame:
 
 
 def show_overview():
-    st.header("Major Nigerian Cities")
+    st.markdown('<div class="section-title">🌍 Major Nigerian Cities - Latest Readings</div>', unsafe_allow_html=True)
     cols = st.columns(3)
     conn = get_db_connection()
     # Show major cities grid; if DB has readings show them, otherwise show placeholders
@@ -366,7 +366,7 @@ def show_overview():
 
 
 def show_city_detail(city_id: int):
-    st.header("City detail")
+    st.markdown('<div class="section-title">📍 City Details</div>', unsafe_allow_html=True)
     if not city_id:
         st.info("Select a city to view details")
         return
@@ -444,7 +444,7 @@ def show_city_detail(city_id: int):
 
 
 def show_zone_overview(zone_id: int):
-    st.header("Overview: Cities in Zone")
+    st.markdown('<div class="section-title">🗺️ Geopolitical Zone Overview</div>', unsafe_allow_html=True)
     zone_name = None
     zones = fetch_zones()
     for z in zones:
@@ -473,7 +473,7 @@ def show_zone_overview(zone_id: int):
 
 
 def show_state_overview(state_id: int):
-    st.header("Overview: Cities in state")
+    st.markdown('<div class="section-title">🏛️ State Overview</div>', unsafe_allow_html=True)
     state_name = None
     states = fetch_states()
     for s in states:
@@ -501,9 +501,139 @@ def show_state_overview(state_id: int):
 
 
 def main():
-    st.set_page_config(page_title="Nigeria Weather Dashboard", page_icon="🌦️", layout="wide")
-    st.title("Nigeria Weather Dashboard")
-    st.write("Browse weather by geopolitical zone, state, or city. Data is read from the project's Postgres database.")
+    st.set_page_config(page_title="SkyPulse - Nigeria Weather Intelligence", page_icon="🌦️", layout="wide")
+    
+    # --- CUSTOM STYLES ---
+    st.markdown("""
+        <style>
+        /* Main theme */
+        .stApp {
+            background: radial-gradient(circle at top left, #0a0a0a, #101820);
+        }
+        
+        /* Hero banner */
+        .hero {
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.85)), 
+                              url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 280px;
+            border-radius: 15px;
+            margin: 0 0 2rem 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #00aaff;
+            margin: 0 0 0.5rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+        
+        /* Section titles */
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: #00aaff;
+        }
+        
+        /* Enhanced metric cards */
+        div[data-testid="stMetric"] {
+            background: linear-gradient(135deg, #1a1f2e 0%, #0f1419 100%);
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 170, 255, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 122, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+        div[data-testid="stMetric"]:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 170, 255, 0.3);
+            border-color: rgba(0, 170, 255, 0.5);
+        }
+        div[data-testid="stMetric"] label {
+            color: #b0b0b0 !important;
+            font-weight: 500;
+        }
+        div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+            color: #00aaff !important;
+            font-size: 1.8rem !important;
+        }
+        
+        /* Enhanced buttons */
+        .stButton>button {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            border: none;
+            border-radius: 8px;
+            padding: 0.6rem 1.5rem;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+        }
+        .stButton>button:hover {
+            background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 170, 255, 0.5);
+        }
+        
+        /* City cards styling */
+        div[data-testid="column"] > div {
+            background: linear-gradient(135deg, #1a1f2e 0%, #0f1419 100%);
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 170, 255, 0.15);
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        div[data-testid="column"] > div:hover {
+            border-color: rgba(0, 170, 255, 0.4);
+            box-shadow: 0 6px 16px rgba(0, 122, 255, 0.25);
+        }
+        
+        /* Sidebar styling */
+        section[data-testid="stSidebar"] {
+            background: linear-gradient(180deg, #0f1419 0%, #1a1f2e 100%);
+            border-right: 1px solid rgba(0, 170, 255, 0.2);
+        }
+        section[data-testid="stSidebar"] .stSelectbox label,
+        section[data-testid="stSidebar"] .stCheckbox label {
+            color: #00aaff !important;
+            font-weight: 500;
+        }
+        
+        /* Subheaders */
+        h2, h3 {
+            color: #00aaff !important;
+        }
+        
+        /* Info/warning boxes */
+        .stAlert {
+            border-radius: 8px;
+            border-left: 4px solid #00aaff;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+    
+    # --- HERO BANNER ---
+    st.markdown("""
+        <div class="hero">
+            <h1>🌦️ SkyPulse - Nigeria Weather Intelligence</h1>
+            <p>Real-time weather monitoring across 523 Nigerian cities • Powered by OpenWeatherMap & PostgreSQL</p>
+        </div>
+    """, unsafe_allow_html=True)
 
     conn = get_db_connection()
     if conn is None:
