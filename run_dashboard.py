@@ -196,9 +196,36 @@ def show_hero():
     """, unsafe_allow_html=True)
 
 
-def show_overview():
-    """Display major cities overview."""
-    st.markdown('<div class="section-title"> Major Nigerian Cities - Latest Readings</div>', unsafe_allow_html=True)
+def show_overview(filtered_cities=None):
+    """Display major cities overview or filtered cities."""
+    
+    if filtered_cities:
+        st.markdown('<div class="section-title">📍 Filtered Cities - Latest Readings</div>', unsafe_allow_html=True)
+        st.info(f"Showing {len(filtered_cities)} cities based on your filter selection")
+        
+        cols = st.columns(3)
+        for i, city in enumerate(filtered_cities[:30]):
+            col = cols[i % 3]
+            with col:
+                city_name = city['city_name']
+                city_id = city['id']
+                st.subheader(city_name)
+                
+                reading = fetch_latest_reading(city_id)
+                if reading:
+                    st.metric("Temperature", f"{reading['temperature']:.1f} °C")
+                    st.write(f"**{reading['weather_main']}**: {reading['weather_desc']}")
+                    st.write(f"Humidity: {reading['humidity']}%")
+                    st.button("View details", key=f"view_{city_id}", on_click=goto_city, args=(city_id, city_name))
+                else:
+                    st.info("No readings yet")
+        
+        if len(filtered_cities) > 30:
+            st.info(f"Showing first 30 of {len(filtered_cities)} cities. Use city selector for more.")
+        return
+    
+    # Default view: show major cities
+    st.markdown('<div class="section-title">🏙️ Major Nigerian Cities - Latest Readings</div>', unsafe_allow_html=True)
     
     cols = st.columns(3)
     cities = fetch_cities()
@@ -306,9 +333,7 @@ def sidebar_controls():
     st.sidebar.selectbox("City", options=["All"] + city_names, key='sidebar_city')
     
     # Auto-refresh toggle
-    if 'auto_refresh' not in st.session_state:
-        st.session_state['auto_refresh'] = True
-    st.sidebar.checkbox("Auto-refresh every minute", value=st.session_state['auto_refresh'], key='auto_refresh')
+    auto_refresh = st.sidebar.checkbox("Auto-refresh every minute", value=True, key='auto_refresh')
     
     st.sidebar.button("Apply filters", on_click=apply_filters)
 
@@ -323,19 +348,45 @@ def apply_filters():
     states = fetch_states()
     cities = fetch_cities()
     
-    selected_city_id = None
+    # If specific city is selected, go to city detail view
     if city_choice and city_choice != 'All':
+        selected_city_id = None
         for c in cities:
             if c.get('city_name') == city_choice:
                 selected_city_id = c.get('id')
                 break
+        
+        if selected_city_id:
+            st.session_state['selected_city'] = selected_city_id
+            st.session_state['view'] = 'city'
+            st.session_state['view_city_name'] = city_choice
+            st.session_state['filtered_cities'] = None
+            return
     
-    if selected_city_id:
-        st.session_state['selected_city'] = selected_city_id
-        st.session_state['view'] = 'city'
-        st.session_state['view_city_name'] = city_choice
-    else:
-        st.session_state['view'] = 'main'
+    # Otherwise, filter cities by zone or state
+    filtered = None
+    
+    if state_choice and state_choice != 'All':
+        # Filter by state
+        state_id = None
+        for s in states:
+            if s.get('state_name') == state_choice:
+                state_id = s.get('id')
+                break
+        if state_id:
+            filtered = fetch_cities(state_id)
+    elif zone_choice and zone_choice != 'All':
+        # Filter by zone
+        zone_id = None
+        for z in zones:
+            if z.get('zone_name') == zone_choice:
+                zone_id = z.get('id')
+                break
+        if zone_id:
+            filtered = fetch_cities_by_zone(zone_id)
+    
+    st.session_state['filtered_cities'] = filtered
+    st.session_state['view'] = 'main'
 
 
 def goto_city(city_id, city_name=None):
@@ -370,7 +421,7 @@ def main():
     sidebar_controls()
     
     # Auto-refresh if enabled
-    if st.session_state.get('auto_refresh'):
+    if st.session_state.get('auto_refresh', False):
         try:
             from streamlit_autorefresh import st_autorefresh
             st_autorefresh(interval=60 * 1000, key="autorefresh")
@@ -382,12 +433,14 @@ def main():
         st.session_state.view = 'main'
     if 'selected_city' not in st.session_state:
         st.session_state.selected_city = None
+    if 'filtered_cities' not in st.session_state:
+        st.session_state.filtered_cities = None
     
     # Render appropriate view
     if st.session_state.view == 'main':
         left, right = st.columns([2, 1])
         with left:
-            show_overview()
+            show_overview(st.session_state.get('filtered_cities'))
         with right:
             show_city_detail(st.session_state.get('selected_city'))
     elif st.session_state.view == 'city':
