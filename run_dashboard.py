@@ -7,6 +7,8 @@ Weather monitoring dashboard for Nigerian cities.
 import os
 import sys
 import streamlit as st
+from datetime import datetime, timezone
+import pytz
 
 # Add app to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -64,6 +66,35 @@ def fetch_latest_reading(city_id):
     """Fetch latest reading with 30s cache."""
     service = get_data_service()
     return service.fetch_latest_reading(city_id)
+
+
+def format_timestamp(timestamp_str):
+    """Convert UTC timestamp to Nigerian time (WAT = UTC+1) and format it."""
+    if not timestamp_str:
+        return "N/A"
+    
+    try:
+        # Parse the timestamp string
+        if isinstance(timestamp_str, str):
+            # Handle both with and without timezone info
+            if '+' in timestamp_str or timestamp_str.endswith('Z'):
+                dt = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
+            else:
+                dt = datetime.fromisoformat(timestamp_str).replace(tzinfo=timezone.utc)
+        else:
+            # Already a datetime object
+            dt = timestamp_str
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+        
+        # Convert to Nigerian time (Africa/Lagos = WAT = UTC+1)
+        lagos_tz = pytz.timezone('Africa/Lagos')
+        local_time = dt.astimezone(lagos_tz)
+        
+        # Format as readable string
+        return local_time.strftime('%Y-%m-%d %H:%M:%S WAT')
+    except Exception as e:
+        return str(timestamp_str)
 
 
 # Major cities to display
@@ -284,7 +315,7 @@ def show_city_detail(city_id):
         
         st.markdown(f"**Description:** {reading['weather_main']} — {reading['weather_desc']}")
         st.markdown(f"**Pressure:** {reading['pressure']} hPa")
-        st.markdown(f"**Last updated:** {reading['reading_timestamp']}")
+        st.markdown(f"**Last updated:** {format_timestamp(reading['reading_timestamp'])}")
     else:
         st.warning("No readings available for this city yet.")
     
