@@ -200,7 +200,7 @@ def show_overview(filtered_cities=None):
     """Display major cities overview or filtered cities."""
     
     if filtered_cities:
-        st.markdown('<div class="section-title">📍 Filtered Cities - Latest Readings</div>', unsafe_allow_html=True)
+        st.markdown('<div class="section-title"> Filtered Cities - Latest Readings</div>', unsafe_allow_html=True)
         st.info(f"Showing {len(filtered_cities)} cities based on your filter selection")
         
         cols = st.columns(3)
@@ -225,7 +225,7 @@ def show_overview(filtered_cities=None):
         return
     
     # Default view: show major cities
-    st.markdown('<div class="section-title">🏙️ Major Nigerian Cities - Latest Readings</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title"> Major Nigerian Cities - Latest Readings</div>', unsafe_allow_html=True)
     
     cols = st.columns(3)
     cities = fetch_cities()
