@@ -1,4 +1,4 @@
-# Weather Pipeline - OOP Refactored Version
+# Weather Pipeline
 
 A production-ready, object-oriented weather data ETL pipeline and dashboard for Nigerian cities.
 
@@ -7,7 +7,7 @@ A production-ready, object-oriented weather data ETL pipeline and dashboard for 
 This project demonstrates professional data engineering practices with a clean OOP architecture, featuring:
 - Real-time weather data ingestion from OpenWeatherMap API
 - PostgreSQL database with star schema design
-- Interactive Streamlit dashboard with modern UI
+- Interactive Streamlit dashboard 
 - Docker containerization for easy deployment
 - Full type hints and comprehensive documentation
 
@@ -28,7 +28,8 @@ weather_pipeline/
 │       ├── config.py          # Configuration management
 │       └── dashboard_service.py # Dashboard data service
 ├── data/                       # Data files
-│   └── nigerian_cities.csv    # 523 Nigerian cities with coordinates
+│   ├── nigerian_cities.csv    # 523 Nigerian cities with coordinates
+│   └── city.list.json         # OpenWeather city list
 ├── sql/                        # SQL scripts
 │   └── init.sql               # Database schema initialization
 ├── run_pipeline.py            # Pipeline entry point
@@ -41,34 +42,38 @@ weather_pipeline/
 
 ## Architecture
 
-### OOP Design Principles
+### Core Components
 
 **1. DatabaseManager** (`app/core/database.py`)
-- Connection pooling for efficient resource usage
+- Connection pooling (configurable min/max connections)
 - Context manager protocol for safe connection handling
-- Type-hinted methods with comprehensive docstrings
 - Automatic transaction management (commit/rollback)
+- Type-hinted methods with comprehensive docstrings
+- Custom exception: `DatabaseConnectionError`
 
 **2. WeatherAPIClient** (`app/core/api_client.py`)
 - Retry logic with exponential backoff
-- HTTP session management
-- Custom exception handling
-- Rate limiting support
+- HTTP session management with connection pooling
+- Timeout handling and error recovery
+- HTTP status code error handling (401, 404, 429, 5xx)
+- Custom exception: `WeatherAPIError`
 
 **3. WeatherDataProcessor** (`app/core/processor.py`)
 - Data validation and transformation
 - Temperature unit conversion (Kelvin → Celsius)
-- Quality checks for sensor readings
-- Structured error handling
+- Quality checks for sensor readings (temperature, humidity, pressure, wind speed)
+- Timestamp handling (UTC timezone)
+- Custom exception: `DataProcessingError`
 
 **4. WeatherPipeline** (`app/core/pipeline.py`)
 - Orchestrates the entire ETL process
 - Scheduled execution with configurable intervals
-- Comprehensive logging and metrics
+- Success/failure tracking and comprehensive logging
 - Resource cleanup on exit
+- Context manager support
 
 **5. DatabaseSeeder** (`app/core/seeder.py`)
-- Idempotent CSV → database loading
+- Idempotent CSV → database loading (TRUNCATE CASCADE)
 - Coordinate parsing with validation
 - Duplicate detection
 - Transaction safety
@@ -78,12 +83,17 @@ weather_pipeline/
 - Fallback to CSV when database unavailable
 - Caching support for Streamlit
 
+**7. Data Models** (`app/models/weather.py`)
+- `WeatherReading` dataclass with type hints
+- `City` dataclass for city metadata
+- `to_dict()` methods for database insertion
+
 ## Quick Start
 
 ### Prerequisites
 - Docker & Docker Compose
 - Python 3.12+ (for local development)
-- OpenWeatherMap API key
+- OpenWeatherMap API key ([Get one here](https://openweathermap.org/api))
 
 ### Environment Setup
 
@@ -105,7 +115,7 @@ OPENWEATHER_RETRIES=3
 PIPELINE_INTERVAL_MINUTES=10
 CSV_PATH=data/nigerian_cities.csv
 
-# pgAdmin
+# pgAdmin (Optional)
 PGADMIN_DEFAULT_EMAIL=admin@example.com
 PGADMIN_DEFAULT_PASSWORD=admin
 ```
@@ -172,41 +182,48 @@ weather_readings (
 ```
 
 **Performance Features:**
-- Composite index on `(city_id, reading_timestamp DESC)`
+- Composite index on `(city_id, reading_timestamp DESC)` for fast queries
 - Foreign key constraints for referential integrity
 - BIGSERIAL for weather_readings to handle millions of rows
 
 ## Dashboard Features
 
 - **Real-time Data**: Auto-refresh every 60 seconds
-- **Hierarchical Navigation**: Zone → State → City
+- **Hierarchical Navigation**: Zone → State → City selection
 - **Interactive Maps**: Lat/lon visualization for cities
 - **Fallback Mode**: CSV-based filtering when DB is unavailable
 - **Responsive Layout**: 3-column grid for major cities
+- **Latest Readings**: Current weather conditions with timestamps
 
-## Key Features
+## Key Design Principles
+
+### OOP Best Practices
+- **Single Responsibility**: Each class has one well-defined purpose
+- **Dependency Injection**: Dependencies passed to constructors
+- **Context Managers**: Automatic resource cleanup (`__enter__`, `__exit__`)
+- **Type Safety**: Full type hints throughout codebase
+- **Custom Exceptions**: Specific error classes for different failure modes
+- **Comprehensive Docstrings**: Google-style documentation
 
 ### Error Handling
-- Custom exception classes (`DatabaseConnectionError`, `WeatherAPIError`, `DataProcessingError`)
-- Graceful degradation (CSV fallback)
-- Comprehensive logging at all levels
-
-### Type Safety
-- Full type hints throughout codebase
-- Dataclasses for structured data (`WeatherReading`, `City`)
-- Optional types for nullable fields
+- Custom exception classes for specific error scenarios
+- Graceful degradation (CSV fallback when DB unavailable)
+- Comprehensive logging at all levels (DEBUG, INFO, WARNING, ERROR)
+- Automatic retry logic with exponential backoff
 
 ### Resource Management
-- Context managers for automatic cleanup
 - Connection pooling to prevent leaks
+- Context managers for automatic cleanup
 - Session management for HTTP requests
+- Proper transaction handling (commit/rollback)
 
 ### Configuration
 - Environment-based config (12-factor app)
-- Centralized config classes (`DatabaseConfig`, `APIConfig`, `PipelineConfig`)
+- Centralized config classes
 - Validation before startup
+- Sensible defaults with override options
 
-## 📈 Data Flow
+## Data Flow
 
 ```
 CSV File → DatabaseSeeder → PostgreSQL
@@ -216,38 +233,6 @@ OpenWeatherMap API → WeatherAPIClient → WeatherDataProcessor → DatabaseMan
                                                                                   DashboardDataService → Streamlit UI
 ```
 
-## 🔧 Development
-
-### Adding New Features
-
-**1. New Data Model:**
-```python
-# app/models/your_model.py
-from dataclasses import dataclass
-
-@dataclass
-class YourModel:
-    field1: str
-    field2: int
-```
-
-**2. New Service:**
-```python
-# app/core/your_service.py
-class YourService:
-    def __init__(self, db: DatabaseManager):
-        self._db = db
-    
-    def your_method(self) -> None:
-        """Docstring with type hints."""
-        pass
-```
-
-### Code Style
-- Type hints on all functions
-- Docstrings (Google style)
-- Context managers for resource cleanup
-- Custom exceptions for specific error cases
 
 ## Troubleshooting
 
@@ -258,50 +243,66 @@ docker compose ps database
 
 # View database logs
 docker compose logs database
+
+# Restart database service
+docker compose restart database
 ```
 
-**API errors (401):**
+**API errors (401 Unauthorized):**
 - Verify `OPENWEATHER_API_KEY` in `.env`
-- Check API key permissions on OpenWeatherMap
+- Check API key permissions on OpenWeatherMap dashboard
+- Ensure API key is active
 
 **Dashboard shows no readings:**
 - Ensure pipeline has run at least once
 - Check pipeline logs: `docker compose logs pipeline`
+- Verify database has data: Connect via pgAdmin
 
-## Environment Variables Reference
+**Pipeline not updating:**
+- Check API rate limits
+- Verify network connectivity
+- Review pipeline logs for errors
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `DB_HOST` | Database host | `localhost` |
-| `DB_NAME` | Database name | `weather` |
-| `DB_USER` | Database user | `weather_user` |
-| `DB_PASSWORD` | Database password | Required |
-| `OPENWEATHER_API_KEY` | API key | Required |
-| `OPENWEATHER_TIMEOUT` | Request timeout (s) | `10` |
-| `OPENWEATHER_RETRIES` | Max retries | `3` |
-| `PIPELINE_INTERVAL_MINUTES` | Schedule interval | `10` |
-| `CSV_PATH` | Cities CSV path | `data/nigerian_cities.csv` |
 
-## Future Enhancements
+## Testing
 
-- [ ] Add pytest test suite
-- [ ] Implement GitHub Actions CI/CD
-- [ ] Add Prometheus metrics
-- [ ] Implement data retention policies
-- [ ] Add async API calls for parallel processing
-- [ ] Create Grafana dashboards
-- [ ] Add alerting system
-- [ ] Implement caching layer (Redis)
+### Verification Tests
+```bash
+# Test imports
+python -c "from app.core.database import DatabaseManager; print('✓ DatabaseManager')"
+python -c "from app.core.api_client import WeatherAPIClient; print('✓ WeatherAPIClient')"
+python -c "from app.core.pipeline import WeatherPipeline; print('✓ WeatherPipeline')"
+python -c "from app.core.seeder import DatabaseSeeder; print('✓ DatabaseSeeder')"
+python -c "from app.utils.dashboard_service import DashboardDataService; print('✓ DashboardDataService')"
+
+# Test database connection
+python -c "from app.core.database import DatabaseManager; import os; db = DatabaseManager(os.getenv('DB_HOST', 'localhost'), os.getenv('DB_NAME', 'weather'), os.getenv('DB_USER'), os.getenv('DB_PASSWORD')); print('✓ DB connected')"
+```
+
+
+## Contributing
+
+Contributions are welcome! Please follow these guidelines:
+1. Fork the repository
+2. Create a feature branch
+3. Follow the code style guidelines
+4. Add appropriate tests
+5. Submit a pull request
+
 
 
 ## Author
 
 **Akin-ctrl**
-- GitHub: [@Akin-ctrl](https://github.com/Akin-ctrl)
-- Repository: [weather_pipeline](https://github.com/Akin-ctrl/weather_pipeline)
+
 
 ## Acknowledgments
 
-- OpenWeatherMap for weather data API
-- Streamlit for dashboard framework
-- PostgreSQL for robust data storage
+- [OpenWeatherMap](https://openweathermap.org/) for weather data API
+- [Streamlit](https://streamlit.io/) for dashboard framework
+- [PostgreSQL](https://www.postgresql.org/) for robust data storage
+- Nigerian cities dataset for comprehensive coverage
+
+---
+
+**Built using Python, PostgreSQL, Docker, and Streamlit**
